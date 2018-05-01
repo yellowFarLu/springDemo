@@ -1,0 +1,817 @@
+2018-03-22 17:42:30,343 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-03-22 17:42:30,353 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-03-22 17:42:30,354 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-03-22 17:42:30,365 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cd2dae5: startup date [Thu Mar 22 17:42:30 CST 2018]; root of context hierarchy
+2018-03-22 17:42:30,471 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-03-22 17:42:30,472 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-03-22 17:42:30,472 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-03-22 17:42:30,515 - Loading XML bean definitions from class path resource [applicationContext-test.xml]
+2018-03-22 17:42:30,565 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-03-22 17:42:30,630 - Loading schema mappings from [META-INF/spring.schemas]
+2018-03-22 17:42:30,643 - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/websocket/spring-websocket.xsd=org/springframework/web/socket/config/spring-websocket-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/websocket/spring-websocket-4.1.xsd=org/springframework/web/socket/config/spring-websocket-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/websocket/spring-websocket-4.0.xsd=org/springframework/web/socket/config/spring-websocket-4.0.xsd}
+2018-03-22 17:42:30,646 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.2.xsd
+2018-03-22 17:42:30,705 - Found XML schema [http://www.springframework.org/schema/context/spring-context-4.0.xsd] in classpath: org/springframework/context/config/spring-context-4.0.xsd
+2018-03-22 17:42:30,716 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.2.xsd
+2018-03-22 17:42:30,728 - Found XML schema [http://www.springframework.org/schema/task/spring-task-3.0.xsd] in classpath: org/springframework/scheduling/config/spring-task-3.0.xsd
+2018-03-22 17:42:30,735 - Found XML schema [http://www.springframework.org/schema/aop/spring-aop-4.0.xsd] in classpath: org/springframework/aop/config/spring-aop-4.0.xsd
+2018-03-22 17:42:30,746 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-4.2.xsd
+2018-03-22 17:44:16,872 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-03-22 17:44:16,878 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-03-22 17:44:16,879 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-03-22 17:44:16,889 - Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@cd2dae5: startup date [Thu Mar 22 17:44:16 CST 2018]; root of context hierarchy
+2018-03-22 17:44:16,986 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-03-22 17:44:16,987 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-03-22 17:44:16,987 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-03-22 17:44:17,040 - Loading XML bean definitions from class path resource [applicationContext-test.xml]
+2018-03-22 17:44:17,098 - Using JAXP provider [com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderFactoryImpl]
+2018-03-22 17:44:17,177 - Loading schema mappings from [META-INF/spring.schemas]
+2018-03-22 17:44:17,187 - Loaded schema mappings: {http://www.springframework.org/schema/tx/spring-tx-2.5.xsd=org/springframework/transaction/config/spring-tx-2.5.xsd, http://www.springframework.org/schema/cache/spring-cache-4.2.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-4.1.xsd=org/springframework/aop/config/spring-aop-4.1.xsd, http://www.springframework.org/schema/context/spring-context-3.1.xsd=org/springframework/context/config/spring-context-3.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.1.xsd=org/springframework/jdbc/config/spring-jdbc-4.1.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.1.xsd=org/springframework/web/servlet/config/spring-mvc-4.1.xsd, http://www.springframework.org/schema/util/spring-util-3.0.xsd=org/springframework/beans/factory/xml/spring-util-3.0.xsd, http://www.springframework.org/schema/tool/spring-tool.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.2.xsd=org/springframework/aop/config/spring-aop-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.1.xsd=org/springframework/scripting/config/spring-lang-4.1.xsd, http://www.springframework.org/schema/context/spring-context-4.0.xsd=org/springframework/context/config/spring-context-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.2.xsd=org/springframework/web/servlet/config/spring-mvc-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-4.2.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-4.1.xsd=org/springframework/beans/factory/xml/spring-tool-4.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.2.xsd=org/springframework/scripting/config/spring-lang-3.2.xsd, http://www.springframework.org/schema/cache/spring-cache-3.2.xsd=org/springframework/cache/config/spring-cache-3.2.xsd, http://www.springframework.org/schema/jee/spring-jee-4.1.xsd=org/springframework/ejb/config/spring-jee-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd=org/springframework/jdbc/config/spring-jdbc-3.1.xsd, http://www.springframework.org/schema/util/spring-util-2.0.xsd=org/springframework/beans/factory/xml/spring-util-2.0.xsd, http://www.springframework.org/schema/task/spring-task-4.2.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.2.xsd=org/springframework/beans/factory/xml/spring-tool-3.2.xsd, http://www.springframework.org/schema/context/spring-context.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-4.2.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/cache/spring-cache-4.1.xsd=org/springframework/cache/config/spring-cache-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.0.xsd=org/springframework/aop/config/spring-aop-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.2.xsd=org/springframework/ejb/config/spring-jee-3.2.xsd, http://www.springframework.org/schema/context/spring-context-3.0.xsd=org/springframework/context/config/spring-context-3.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.0.xsd=org/springframework/jdbc/config/spring-jdbc-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd=org/springframework/web/servlet/config/spring-mvc-4.0.xsd, http://www.springframework.org/schema/util/spring-util-2.5.xsd=org/springframework/beans/factory/xml/spring-util-2.5.xsd, http://www.springframework.org/schema/beans/spring-beans-3.2.xsd=org/springframework/beans/factory/xml/spring-beans-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.1.xsd=org/springframework/aop/config/spring-aop-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-4.0.xsd=org/springframework/scripting/config/spring-lang-4.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.1.xsd=org/springframework/web/servlet/config/spring-mvc-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-4.1.xsd=org/springframework/beans/factory/xml/spring-beans-4.1.xsd, http://www.springframework.org/schema/tool/spring-tool-4.0.xsd=org/springframework/beans/factory/xml/spring-tool-4.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.2.xsd=org/springframework/transaction/config/spring-tx-3.2.xsd, http://www.springframework.org/schema/lang/spring-lang-3.1.xsd=org/springframework/scripting/config/spring-lang-3.1.xsd, http://www.springframework.org/schema/cache/spring-cache-3.1.xsd=org/springframework/cache/config/spring-cache-3.1.xsd, http://www.springframework.org/schema/jee/spring-jee-4.0.xsd=org/springframework/ejb/config/spring-jee-4.0.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.0.xsd=org/springframework/jdbc/config/spring-jdbc-3.0.xsd, http://www.springframework.org/schema/task/spring-task-4.1.xsd=org/springframework/scheduling/config/spring-task-4.1.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-3.1.xsd=org/springframework/beans/factory/xml/spring-tool-3.1.xsd, http://www.springframework.org/schema/tx/spring-tx-4.1.xsd=org/springframework/transaction/config/spring-tx-4.1.xsd, http://www.springframework.org/schema/cache/spring-cache-4.0.xsd=org/springframework/cache/config/spring-cache-4.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.1.xsd=org/springframework/ejb/config/spring-jee-3.1.xsd, http://www.springframework.org/schema/util/spring-util-4.2.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/task/spring-task-3.2.xsd=org/springframework/scheduling/config/spring-task-3.2.xsd, http://www.springframework.org/schema/beans/spring-beans-3.1.xsd=org/springframework/beans/factory/xml/spring-beans-3.1.xsd, http://www.springframework.org/schema/util/spring-util.xsd=org/springframework/beans/factory/xml/spring-util-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-3.0.xsd=org/springframework/aop/config/spring-aop-3.0.xsd, http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd=org/springframework/web/servlet/config/spring-mvc-3.0.xsd, http://www.springframework.org/schema/beans/spring-beans-4.0.xsd=org/springframework/beans/factory/xml/spring-beans-4.0.xsd, http://www.springframework.org/schema/beans/spring-beans.xsd=org/springframework/beans/factory/xml/spring-beans-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-3.1.xsd=org/springframework/transaction/config/spring-tx-3.1.xsd, http://www.springframework.org/schema/lang/spring-lang-3.0.xsd=org/springframework/scripting/config/spring-lang-3.0.xsd, http://www.springframework.org/schema/context/spring-context-2.5.xsd=org/springframework/context/config/spring-context-2.5.xsd, http://www.springframework.org/schema/task/spring-task-4.0.xsd=org/springframework/scheduling/config/spring-task-4.0.xsd, http://www.springframework.org/schema/tool/spring-tool-3.0.xsd=org/springframework/beans/factory/xml/spring-tool-3.0.xsd, http://www.springframework.org/schema/tx/spring-tx-4.0.xsd=org/springframework/transaction/config/spring-tx-4.0.xsd, http://www.springframework.org/schema/aop/spring-aop-2.0.xsd=org/springframework/aop/config/spring-aop-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-3.0.xsd=org/springframework/ejb/config/spring-jee-3.0.xsd, http://www.springframework.org/schema/util/spring-util-4.1.xsd=org/springframework/beans/factory/xml/spring-util-4.1.xsd, http://www.springframework.org/schema/task/spring-task-3.1.xsd=org/springframework/scheduling/config/spring-task-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-3.0.xsd=org/springframework/beans/factory/xml/spring-beans-3.0.xsd, http://www.springframework.org/schema/websocket/spring-websocket.xsd=org/springframework/web/socket/config/spring-websocket-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/aop/spring-aop-2.5.xsd=org/springframework/aop/config/spring-aop-2.5.xsd, http://www.springframework.org/schema/lang/spring-lang-2.0.xsd=org/springframework/scripting/config/spring-lang-2.0.xsd, http://www.springframework.org/schema/util/spring-util-3.2.xsd=org/springframework/beans/factory/xml/spring-util-3.2.xsd, http://www.springframework.org/schema/task/spring-task.xsd=org/springframework/scheduling/config/spring-task-4.2.xsd, http://www.springframework.org/schema/tool/spring-tool-2.0.xsd=org/springframework/beans/factory/xml/spring-tool-2.0.xsd, http://www.springframework.org/schema/tx/spring-tx-3.0.xsd=org/springframework/transaction/config/spring-tx-3.0.xsd, http://www.springframework.org/schema/lang/spring-lang-2.5.xsd=org/springframework/scripting/config/spring-lang-2.5.xsd, http://www.springframework.org/schema/context/spring-context-4.2.xsd=org/springframework/context/config/spring-context-4.2.xsd, http://www.springframework.org/schema/jee/spring-jee-2.0.xsd=org/springframework/ejb/config/spring-jee-2.0.xsd, http://www.springframework.org/schema/tool/spring-tool-2.5.xsd=org/springframework/beans/factory/xml/spring-tool-2.5.xsd, http://www.springframework.org/schema/jee/spring-jee-2.5.xsd=org/springframework/ejb/config/spring-jee-2.5.xsd, http://www.springframework.org/schema/util/spring-util-4.0.xsd=org/springframework/beans/factory/xml/spring-util-4.0.xsd, http://www.springframework.org/schema/task/spring-task-3.0.xsd=org/springframework/scheduling/config/spring-task-3.0.xsd, http://www.springframework.org/schema/websocket/spring-websocket-4.1.xsd=org/springframework/web/socket/config/spring-websocket-4.1.xsd, http://www.springframework.org/schema/aop/spring-aop-4.2.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-3.2.xsd=org/springframework/context/config/spring-context-3.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-4.2.xsd=org/springframework/jdbc/config/spring-jdbc-4.2.xsd, http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd=org/springframework/web/servlet/config/spring-mvc-4.2.xsd, http://www.springframework.org/schema/util/spring-util-3.1.xsd=org/springframework/beans/factory/xml/spring-util-3.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.0.xsd=org/springframework/beans/factory/xml/spring-beans-2.0.xsd, http://www.springframework.org/schema/cache/spring-cache.xsd=org/springframework/cache/config/spring-cache-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx.xsd=org/springframework/transaction/config/spring-tx-4.2.xsd, http://www.springframework.org/schema/lang/spring-lang-4.2.xsd=org/springframework/scripting/config/spring-lang-4.2.xsd, http://www.springframework.org/schema/context/spring-context-4.1.xsd=org/springframework/context/config/spring-context-4.1.xsd, http://www.springframework.org/schema/beans/spring-beans-2.5.xsd=org/springframework/beans/factory/xml/spring-beans-2.5.xsd, http://www.springframework.org/schema/tool/spring-tool-4.2.xsd=org/springframework/beans/factory/xml/spring-tool-4.2.xsd, http://www.springframework.org/schema/tx/spring-tx-2.0.xsd=org/springframework/transaction/config/spring-tx-2.0.xsd, http://www.springframework.org/schema/jee/spring-jee-4.2.xsd=org/springframework/ejb/config/spring-jee-4.2.xsd, http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd=org/springframework/jdbc/config/spring-jdbc-3.2.xsd, http://www.springframework.org/schema/aop/spring-aop.xsd=org/springframework/aop/config/spring-aop-4.2.xsd, http://www.springframework.org/schema/websocket/spring-websocket-4.0.xsd=org/springframework/web/socket/config/spring-websocket-4.0.xsd}
+2018-03-22 17:44:17,189 - Found XML schema [http://www.springframework.org/schema/beans/spring-beans.xsd] in classpath: org/springframework/beans/factory/xml/spring-beans-4.2.xsd
+2018-03-22 17:44:17,251 - Found XML schema [http://www.springframework.org/schema/context/spring-context-4.0.xsd] in classpath: org/springframework/context/config/spring-context-4.0.xsd
+2018-03-22 17:44:17,264 - Found XML schema [http://www.springframework.org/schema/tool/spring-tool.xsd] in classpath: org/springframework/beans/factory/xml/spring-tool-4.2.xsd
+2018-03-22 17:44:17,277 - Found XML schema [http://www.springframework.org/schema/task/spring-task-3.0.xsd] in classpath: org/springframework/scheduling/config/spring-task-3.0.xsd
+2018-03-22 17:44:17,285 - Found XML schema [http://www.springframework.org/schema/aop/spring-aop-4.0.xsd] in classpath: org/springframework/aop/config/spring-aop-4.0.xsd
+2018-03-22 17:44:17,300 - Found XML schema [http://www.springframework.org/schema/mvc/spring-mvc.xsd] in classpath: org/springframework/web/servlet/config/spring-mvc-4.2.xsd
+2018-03-22 17:44:17,367 - Loading bean definitions
+2018-03-22 17:44:17,392 - Loaded NamespaceHandler mappings: {http://www.springframework.org/schema/p=org.springframework.beans.factory.xml.SimplePropertyNamespaceHandler, http://www.springframework.org/schema/mvc=org.springframework.web.servlet.config.MvcNamespaceHandler, http://www.springframework.org/schema/util=org.springframework.beans.factory.xml.UtilNamespaceHandler, http://www.springframework.org/schema/jee=org.springframework.ejb.config.JeeNamespaceHandler, http://www.springframework.org/schema/websocket=org.springframework.web.socket.config.WebSocketNamespaceHandler, http://www.springframework.org/schema/aop=org.springframework.aop.config.AopNamespaceHandler, http://www.springframework.org/schema/jdbc=org.springframework.jdbc.config.JdbcNamespaceHandler, http://www.springframework.org/schema/cache=org.springframework.cache.config.CacheNamespaceHandler, http://www.springframework.org/schema/c=org.springframework.beans.factory.xml.SimpleConstructorNamespaceHandler, http://www.springframework.org/schema/tx=org.springframework.transaction.config.TxNamespaceHandler, http://www.springframework.org/schema/task=org.springframework.scheduling.config.TaskNamespaceHandler, http://www.springframework.org/schema/lang=org.springframework.scripting.config.LangNamespaceHandler, http://www.springframework.org/schema/context=org.springframework.context.config.ContextNamespaceHandler}
+2018-03-22 17:44:17,429 - Adding [systemProperties] PropertySource with lowest search precedence
+2018-03-22 17:44:17,430 - Adding [systemEnvironment] PropertySource with lowest search precedence
+2018-03-22 17:44:17,430 - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+2018-03-22 17:44:17,464 - JSR-250 'javax.annotation.ManagedBean' found and supported for component scanning
+2018-03-22 17:44:17,485 - Looking for matching resources in directory tree [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example]
+2018-03-22 17:44:17,486 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,490 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/springaop] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,495 - Looking for matching resources in directory tree [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example]
+2018-03-22 17:44:17,495 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,496 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,497 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/tem] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,500 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/websocket] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,501 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,502 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/security] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,502 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/dao] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,503 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/aop] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,504 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/param] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,504 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/controller] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,505 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,506 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/result] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,506 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/arg] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,507 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/aspect] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,508 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,508 - Searching directory [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/impl] for files matching pattern [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/**/*.class]
+2018-03-22 17:44:17,519 - Resolved location pattern [classpath*:com/sheng/example/**/*.class] to resources [file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/springaop/MyTest.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/springaop/security.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/springaop/MyTaskAnnotationTest.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/springaop/SpringTestCase.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/springaop/TestArrays.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/springaop/PropertyUtilsTest.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/springaop/TestTem.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/test-classes/com/sheng/example/springaop/EhCacheTestServiceTest.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/tem/TestImpl.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/tem/MyTaskAnnotation.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/tem/Test.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/websocket/WebSocketConfig.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/websocket/WebSocketInterceptor.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/websocket/MyHandler.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit/GuessDAO.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit/CustomerDAOImpl.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit/Guess.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit/CustomerDAO.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit/MailController.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit/CustomerManager.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit/CustomerManagerImpl.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/security/EhCacheTestService.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/security/EhCacheTestServiceImpl.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/dao/DAO.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/aop/Performance.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/param/Test.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/controller/TestController.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/controller/SocketController.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/controller/MyController.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/CustomerDO.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/result/AjaxResult.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/Result.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/arg/GroupVO.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/arg/RequestArg.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/arg/GroupDO.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/arg/SaveCustomFieldArg.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/User.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/CustomField.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/CustomerPersonalStatistics.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/model/Payment.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/aspect/TestAspect.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/impl/TestServiceImpl.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/impl/AOPServiceImpl.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/impl/MailServiceImpl.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/AOPService.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/Service.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/MailService.class], file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/TestService.class]]
+2018-03-22 17:44:17,645 - Identified candidate component class: file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/tem/MyTaskAnnotation.class]
+2018-03-22 17:44:17,669 - Identified candidate component class: file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/websocket/WebSocketConfig.class]
+2018-03-22 17:44:17,672 - Identified candidate component class: file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/websocket/MyHandler.class]
+2018-03-22 17:44:17,675 - Identified candidate component class: file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit/CustomerDAOImpl.class]
+2018-03-22 17:44:17,690 - Identified candidate component class: file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/jmockit/CustomerManagerImpl.class]
+2018-03-22 17:44:17,694 - Identified candidate component class: file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/security/EhCacheTestServiceImpl.class]
+2018-03-22 17:44:17,751 - Identified candidate component class: file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/impl/TestServiceImpl.class]
+2018-03-22 17:44:17,752 - Identified candidate component class: file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/impl/AOPServiceImpl.class]
+2018-03-22 17:44:17,753 - Identified candidate component class: file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/service/impl/MailServiceImpl.class]
+2018-03-22 17:44:17,880 - Neither XML 'id' nor 'name' specified - using generated bean name [org.springframework.web.servlet.view.InternalResourceViewResolver#0]
+2018-03-22 17:44:18,004 - Loaded 42 bean definitions from location pattern [applicationContext-test.xml]
+2018-03-22 17:44:18,005 - Bean factory for org.springframework.context.support.ClassPathXmlApplicationContext@cd2dae5: org.springframework.beans.factory.support.DefaultListableBeanFactory@5b7a7f33: defining beans [myTaskAnnotation,webSocketConfig,myHandler,customerDAOImpl,customerManagerImpl,ehCacheTestServiceImpl,testServiceImpl,AOPServiceImpl,mailServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,aspectBean,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.aspectj.AspectJPointcutAdvisor#0,org.springframework.aop.aspectj.AspectJPointcutAdvisor#1,org.springframework.aop.aspectj.AspectJPointcutAdvisor#2,org.springframework.aop.aspectj.AspectJPointcutAdvisor#3,businessService,org.springframework.web.servlet.view.InternalResourceViewResolver#0,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,mvcCorsConfigurations,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3]; root of factory hierarchy
+2018-03-22 17:44:18,114 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-03-22 17:44:18,115 - Creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-03-22 17:44:18,170 - Eagerly caching bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:18,173 - Finished creating instance of bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-03-22 17:44:18,352 - Registered bean definition for imported class 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration'
+2018-03-22 17:44:18,354 - Registering bean definition for @Bean method org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration.webSocketHandlerMapping()
+2018-03-22 17:44:18,354 - Registering bean definition for @Bean method org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration.defaultSockJsTaskScheduler()
+2018-03-22 17:44:18,355 - Registering bean definition for @Bean method com.sheng.example.springaop.websocket.WebSocketConfig.myHandler()
+2018-03-22 17:44:18,357 - Overriding bean definition for bean 'myHandler' with a different definition: replacing [Generic bean: class [com.sheng.example.springaop.websocket.MyHandler]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/Users/huangyuan/Documents/fxiaoke/springAOP/target/classes/com/sheng/example/springaop/websocket/MyHandler.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=webSocketConfig; factoryMethodName=myHandler; initMethodName=null; destroyMethodName=(inferred); defined in com.sheng.example.springaop.websocket.WebSocketConfig]
+2018-03-22 17:44:18,543 - Successfully enhanced com.sheng.example.springaop.websocket.WebSocketConfig; enhanced class name is: com.sheng.example.springaop.websocket.WebSocketConfig$$EnhancerBySpringCGLIB$$82758d3c
+2018-03-22 17:44:18,543 - Replacing bean definition 'webSocketConfig' existing class name 'com.sheng.example.springaop.websocket.WebSocketConfig' with enhanced class name 'com.sheng.example.springaop.websocket.WebSocketConfig$$EnhancerBySpringCGLIB$$82758d3c'
+2018-03-22 17:44:18,551 - Successfully enhanced org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration; enhanced class name is: org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration$$EnhancerBySpringCGLIB$$4d2a0067
+2018-03-22 17:44:18,551 - Replacing bean definition 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration' existing class name 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration' with enhanced class name 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration$$EnhancerBySpringCGLIB$$4d2a0067'
+2018-03-22 17:44:18,556 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-03-22 17:44:18,557 - Creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-03-22 17:44:18,558 - Eagerly caching bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:18,558 - Finished creating instance of bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-03-22 17:44:18,558 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-03-22 17:44:18,559 - Creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-03-22 17:44:18,559 - Eagerly caching bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:18,560 - Finished creating instance of bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-03-22 17:44:18,560 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-03-22 17:44:18,560 - Creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-03-22 17:44:18,568 - Eagerly caching bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:18,569 - Finished creating instance of bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-03-22 17:44:18,569 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-03-22 17:44:18,569 - Creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-03-22 17:44:18,580 - Eagerly caching bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:18,580 - Finished creating instance of bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-03-22 17:44:18,581 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-03-22 17:44:18,581 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-03-22 17:44:18,582 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:18,582 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-03-22 17:44:18,582 - Creating shared instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-03-22 17:44:18,582 - Creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-03-22 17:44:18,582 - Eagerly caching bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:18,582 - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-03-22 17:44:18,583 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAsyncAnnotationProcessor'
+2018-03-22 17:44:18,583 - Creating instance of bean 'org.springframework.context.annotation.internalAsyncAnnotationProcessor'
+2018-03-22 17:44:18,607 - Eagerly caching bean 'org.springframework.context.annotation.internalAsyncAnnotationProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:18,689 - Creating shared instance of singleton bean 'defaultSockJsTaskScheduler'
+2018-03-22 17:44:18,690 - Creating instance of bean 'defaultSockJsTaskScheduler'
+2018-03-22 17:44:18,705 - Creating shared instance of singleton bean 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration'
+2018-03-22 17:44:18,705 - Creating instance of bean 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration'
+2018-03-22 17:44:18,725 - Registered injected element on class [org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration$$EnhancerBySpringCGLIB$$4d2a0067]: AutowiredMethodElement for public void org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration.setConfigurers(java.util.List)
+2018-03-22 17:44:18,725 - Eagerly caching bean 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration' to allow for resolving potential circular references
+2018-03-22 17:44:18,726 - Processing injected element of bean 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration': AutowiredMethodElement for public void org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration.setConfigurers(java.util.List)
+2018-03-22 17:44:18,736 - Creating shared instance of singleton bean 'webSocketConfig'
+2018-03-22 17:44:18,737 - Creating instance of bean 'webSocketConfig'
+2018-03-22 17:44:18,738 - Eagerly caching bean 'webSocketConfig' to allow for resolving potential circular references
+2018-03-22 17:44:18,744 - Bean 'webSocketConfig' of type [class com.sheng.example.springaop.websocket.WebSocketConfig$$EnhancerBySpringCGLIB$$82758d3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-22 17:44:18,744 - Finished creating instance of bean 'webSocketConfig'
+2018-03-22 17:44:18,774 - Autowiring by type from bean name 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration' to bean named 'webSocketConfig'
+2018-03-22 17:44:18,774 - Bean 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration' of type [class org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration$$EnhancerBySpringCGLIB$$4d2a0067] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-22 17:44:18,775 - Finished creating instance of bean 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration'
+2018-03-22 17:44:18,852 - Eagerly caching bean 'defaultSockJsTaskScheduler' to allow for resolving potential circular references
+2018-03-22 17:44:18,895 - Invoking afterPropertiesSet() on bean with name 'defaultSockJsTaskScheduler'
+2018-03-22 17:44:18,895 - Initializing ExecutorService  'defaultSockJsTaskScheduler'
+2018-03-22 17:44:18,902 - Bean 'defaultSockJsTaskScheduler' of type [class org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-03-22 17:44:18,903 - Finished creating instance of bean 'defaultSockJsTaskScheduler'
+2018-03-22 17:44:18,932 - Finished creating instance of bean 'org.springframework.context.annotation.internalAsyncAnnotationProcessor'
+2018-03-22 17:44:18,932 - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2018-03-22 17:44:18,933 - Creating instance of bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2018-03-22 17:44:18,936 - Eagerly caching bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:18,941 - Finished creating instance of bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2018-03-22 17:44:18,941 - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2018-03-22 17:44:18,941 - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2018-03-22 17:44:18,972 - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2018-03-22 17:44:18,999 - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2018-03-22 17:44:19,007 - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@3d9f6567]
+2018-03-22 17:44:19,013 - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@3ecd267f]
+2018-03-22 17:44:19,016 - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@5b7a7f33: defining beans [myTaskAnnotation,webSocketConfig,myHandler,customerDAOImpl,customerManagerImpl,ehCacheTestServiceImpl,testServiceImpl,AOPServiceImpl,mailServiceImpl,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,org.springframework.context.annotation.internalPersistenceAnnotationProcessor,org.springframework.context.event.internalEventListenerProcessor,org.springframework.context.event.internalEventListenerFactory,org.springframework.context.annotation.internalAsyncAnnotationProcessor,org.springframework.context.annotation.internalScheduledAnnotationProcessor,aspectBean,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.aop.aspectj.AspectJPointcutAdvisor#0,org.springframework.aop.aspectj.AspectJPointcutAdvisor#1,org.springframework.aop.aspectj.AspectJPointcutAdvisor#2,org.springframework.aop.aspectj.AspectJPointcutAdvisor#3,businessService,org.springframework.web.servlet.view.InternalResourceViewResolver#0,mvcResourceUrlProvider,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,mvcPathMatcher,mvcUrlPathHelper,mvcCorsConfigurations,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor,org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration,webSocketHandlerMapping,defaultSockJsTaskScheduler]; root of factory hierarchy
+2018-03-22 17:44:19,016 - Creating shared instance of singleton bean 'myTaskAnnotation'
+2018-03-22 17:44:19,016 - Creating instance of bean 'myTaskAnnotation'
+2018-03-22 17:44:19,018 - Creating shared instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,018 - Creating instance of bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,019 - Creating instance of bean '(inner bean)#319bc845'
+2018-03-22 17:44:19,030 - Creating instance of bean '(inner bean)#6b98a075'
+2018-03-22 17:44:19,041 - Finished creating instance of bean '(inner bean)#6b98a075'
+2018-03-22 17:44:19,041 - Creating instance of bean 'businessService'
+2018-03-22 17:44:19,063 - Finished creating instance of bean 'businessService'
+2018-03-22 17:44:19,063 - Creating instance of bean '(inner bean)#dfddc9a'
+2018-03-22 17:44:19,067 - Finished creating instance of bean '(inner bean)#dfddc9a'
+2018-03-22 17:44:19,158 - Finished creating instance of bean '(inner bean)#319bc845'
+2018-03-22 17:44:19,412 - Eagerly caching bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0' to allow for resolving potential circular references
+2018-03-22 17:44:19,423 - Finished creating instance of bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,424 - Creating shared instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,424 - Creating instance of bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,424 - Creating instance of bean '(inner bean)#773f7880'
+2018-03-22 17:44:19,426 - Creating instance of bean '(inner bean)#4eed46ee'
+2018-03-22 17:44:19,427 - Finished creating instance of bean '(inner bean)#4eed46ee'
+2018-03-22 17:44:19,427 - Creating instance of bean 'businessService'
+2018-03-22 17:44:19,427 - Finished creating instance of bean 'businessService'
+2018-03-22 17:44:19,428 - Creating instance of bean '(inner bean)#36b0fcd5'
+2018-03-22 17:44:19,428 - Finished creating instance of bean '(inner bean)#36b0fcd5'
+2018-03-22 17:44:19,434 - Finished creating instance of bean '(inner bean)#773f7880'
+2018-03-22 17:44:19,435 - Eagerly caching bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1' to allow for resolving potential circular references
+2018-03-22 17:44:19,435 - Finished creating instance of bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,435 - Creating shared instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,435 - Creating instance of bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,436 - Creating instance of bean '(inner bean)#7e809b79'
+2018-03-22 17:44:19,437 - Creating instance of bean '(inner bean)#5cc126dc'
+2018-03-22 17:44:19,438 - Finished creating instance of bean '(inner bean)#5cc126dc'
+2018-03-22 17:44:19,438 - Creating instance of bean 'businessService'
+2018-03-22 17:44:19,438 - Finished creating instance of bean 'businessService'
+2018-03-22 17:44:19,438 - Creating instance of bean '(inner bean)#625e134e'
+2018-03-22 17:44:19,439 - Finished creating instance of bean '(inner bean)#625e134e'
+2018-03-22 17:44:19,452 - Finished creating instance of bean '(inner bean)#7e809b79'
+2018-03-22 17:44:19,453 - Eagerly caching bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2' to allow for resolving potential circular references
+2018-03-22 17:44:19,453 - Finished creating instance of bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,454 - Creating shared instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,454 - Creating instance of bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,454 - Creating instance of bean '(inner bean)#1a1da881'
+2018-03-22 17:44:19,455 - Creating instance of bean '(inner bean)#5b970f7'
+2018-03-22 17:44:19,456 - Finished creating instance of bean '(inner bean)#5b970f7'
+2018-03-22 17:44:19,456 - Creating instance of bean 'businessService'
+2018-03-22 17:44:19,456 - Finished creating instance of bean 'businessService'
+2018-03-22 17:44:19,457 - Creating instance of bean '(inner bean)#7fd4acee'
+2018-03-22 17:44:19,457 - Finished creating instance of bean '(inner bean)#7fd4acee'
+2018-03-22 17:44:19,463 - Finished creating instance of bean '(inner bean)#1a1da881'
+2018-03-22 17:44:19,467 - Eagerly caching bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3' to allow for resolving potential circular references
+2018-03-22 17:44:19,467 - Finished creating instance of bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,480 - Eagerly caching bean 'myTaskAnnotation' to allow for resolving potential circular references
+2018-03-22 17:44:19,482 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,483 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,483 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,483 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,483 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,483 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,483 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,483 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,492 - 2 @Scheduled methods processed on bean 'myTaskAnnotation': {public void com.sheng.example.springaop.tem.MyTaskAnnotation.print()=[@org.springframework.scheduling.annotation.Scheduled(cron=, fixedRateString=, zone=, fixedDelay=-1, fixedRate=2000, initialDelayString=, initialDelay=-1, fixedDelayString=)], public void com.sheng.example.springaop.tem.MyTaskAnnotation.show()=[@org.springframework.scheduling.annotation.Scheduled(cron=0 0 1 * * *, fixedRateString=, zone=, fixedDelay=-1, fixedRate=-1, initialDelayString=, initialDelay=-1, fixedDelayString=)]}
+2018-03-22 17:44:19,493 - Finished creating instance of bean 'myTaskAnnotation'
+2018-03-22 17:44:19,493 - Returning cached instance of singleton bean 'webSocketConfig'
+2018-03-22 17:44:19,493 - Creating shared instance of singleton bean 'myHandler'
+2018-03-22 17:44:19,493 - Creating instance of bean 'myHandler'
+2018-03-22 17:44:19,493 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,493 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,494 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,494 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,494 - Returning cached instance of singleton bean 'webSocketConfig'
+2018-03-22 17:44:19,508 - Eagerly caching bean 'myHandler' to allow for resolving potential circular references
+2018-03-22 17:44:19,517 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,517 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,517 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,517 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,517 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,517 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,517 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,517 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,524 - Finished creating instance of bean 'myHandler'
+2018-03-22 17:44:19,525 - Creating shared instance of singleton bean 'customerDAOImpl'
+2018-03-22 17:44:19,525 - Creating instance of bean 'customerDAOImpl'
+2018-03-22 17:44:19,525 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,525 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,525 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,525 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,526 - Eagerly caching bean 'customerDAOImpl' to allow for resolving potential circular references
+2018-03-22 17:44:19,528 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,528 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,529 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,529 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,529 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,529 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,529 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,529 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,530 - Finished creating instance of bean 'customerDAOImpl'
+2018-03-22 17:44:19,531 - Creating shared instance of singleton bean 'customerManagerImpl'
+2018-03-22 17:44:19,531 - Creating instance of bean 'customerManagerImpl'
+2018-03-22 17:44:19,531 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,531 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,531 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,531 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,533 - Eagerly caching bean 'customerManagerImpl' to allow for resolving potential circular references
+2018-03-22 17:44:19,535 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,536 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,536 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,536 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,536 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,536 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,536 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,536 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,540 - Finished creating instance of bean 'customerManagerImpl'
+2018-03-22 17:44:19,541 - Creating shared instance of singleton bean 'ehCacheTestServiceImpl'
+2018-03-22 17:44:19,541 - Creating instance of bean 'ehCacheTestServiceImpl'
+2018-03-22 17:44:19,541 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,542 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,542 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,542 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,549 - Eagerly caching bean 'ehCacheTestServiceImpl' to allow for resolving potential circular references
+2018-03-22 17:44:19,551 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,552 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,552 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,552 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,552 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,552 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,552 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,552 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,554 - Finished creating instance of bean 'ehCacheTestServiceImpl'
+2018-03-22 17:44:19,554 - Creating shared instance of singleton bean 'testServiceImpl'
+2018-03-22 17:44:19,554 - Creating instance of bean 'testServiceImpl'
+2018-03-22 17:44:19,554 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,554 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,554 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,554 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,555 - Eagerly caching bean 'testServiceImpl' to allow for resolving potential circular references
+2018-03-22 17:44:19,558 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,559 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,559 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,559 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,559 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,559 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,559 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,559 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,560 - Finished creating instance of bean 'testServiceImpl'
+2018-03-22 17:44:19,560 - Creating shared instance of singleton bean 'AOPServiceImpl'
+2018-03-22 17:44:19,561 - Creating instance of bean 'AOPServiceImpl'
+2018-03-22 17:44:19,561 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,561 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,561 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,561 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,561 - Eagerly caching bean 'AOPServiceImpl' to allow for resolving potential circular references
+2018-03-22 17:44:19,564 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,564 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,564 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,564 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,564 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,564 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,564 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,564 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,607 - Creating implicit proxy for bean 'AOPServiceImpl' with 0 common interceptors and 5 specific interceptors
+2018-03-22 17:44:19,611 - Creating JDK dynamic proxy: target source is SingletonTargetSource for target object [com.sheng.example.springaop.service.impl.AOPServiceImpl@32232e55]
+2018-03-22 17:44:19,621 - Finished creating instance of bean 'AOPServiceImpl'
+2018-03-22 17:44:19,622 - Creating shared instance of singleton bean 'mailServiceImpl'
+2018-03-22 17:44:19,623 - Creating instance of bean 'mailServiceImpl'
+2018-03-22 17:44:19,623 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,623 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,623 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,623 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,625 - Eagerly caching bean 'mailServiceImpl' to allow for resolving potential circular references
+2018-03-22 17:44:19,628 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,628 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,628 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,628 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,628 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,628 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,628 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,628 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,633 - Finished creating instance of bean 'mailServiceImpl'
+2018-03-22 17:44:19,633 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2018-03-22 17:44:19,633 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2018-03-22 17:44:19,633 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2018-03-22 17:44:19,633 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2018-03-22 17:44:19,633 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2018-03-22 17:44:19,634 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-03-22 17:44:19,634 - Creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-03-22 17:44:19,634 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,634 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,634 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,634 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,636 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerProcessor' to allow for resolving potential circular references
+2018-03-22 17:44:19,639 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,639 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,639 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,639 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,639 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,639 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,639 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,639 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,640 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerProcessor'
+2018-03-22 17:44:19,641 - Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-03-22 17:44:19,641 - Creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-03-22 17:44:19,641 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,641 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,641 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,641 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,642 - Eagerly caching bean 'org.springframework.context.event.internalEventListenerFactory' to allow for resolving potential circular references
+2018-03-22 17:44:19,644 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,644 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,644 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,644 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,645 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,645 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,645 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,645 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,651 - Finished creating instance of bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-03-22 17:44:19,651 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAsyncAnnotationProcessor'
+2018-03-22 17:44:19,652 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2018-03-22 17:44:19,652 - Creating shared instance of singleton bean 'aspectBean'
+2018-03-22 17:44:19,652 - Creating instance of bean 'aspectBean'
+2018-03-22 17:44:19,652 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,652 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,652 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,652 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,676 - Eagerly caching bean 'aspectBean' to allow for resolving potential circular references
+2018-03-22 17:44:19,679 - Finished creating instance of bean 'aspectBean'
+2018-03-22 17:44:19,679 - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2018-03-22 17:44:19,679 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,679 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,679 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,679 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,679 - Creating shared instance of singleton bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2018-03-22 17:44:19,680 - Creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2018-03-22 17:44:19,680 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,680 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,680 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,680 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,696 - Eagerly caching bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0' to allow for resolving potential circular references
+2018-03-22 17:44:19,720 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,720 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,720 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,720 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,720 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,720 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,720 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,720 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,723 - Finished creating instance of bean 'org.springframework.web.servlet.view.InternalResourceViewResolver#0'
+2018-03-22 17:44:19,724 - Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2018-03-22 17:44:19,724 - Creating instance of bean 'mvcResourceUrlProvider'
+2018-03-22 17:44:19,724 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,724 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,724 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,724 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,725 - Eagerly caching bean 'mvcResourceUrlProvider' to allow for resolving potential circular references
+2018-03-22 17:44:19,737 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,737 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,737 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,737 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,737 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,737 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,737 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,737 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,739 - Finished creating instance of bean 'mvcResourceUrlProvider'
+2018-03-22 17:44:19,739 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2018-03-22 17:44:19,739 - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2018-03-22 17:44:19,739 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,739 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,740 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,740 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,740 - Creating instance of bean '(inner bean)#1950e8a6'
+2018-03-22 17:44:19,741 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,741 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,741 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,741 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,743 - Creating instance of bean '(inner bean)#47289387'
+2018-03-22 17:44:19,743 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,743 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,743 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,743 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,743 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,743 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,744 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,744 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,744 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,744 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,744 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,744 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,744 - Finished creating instance of bean '(inner bean)#47289387'
+2018-03-22 17:44:19,749 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,749 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,749 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,749 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,750 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,750 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,750 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,750 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,751 - Finished creating instance of bean '(inner bean)#1950e8a6'
+2018-03-22 17:44:19,758 - No property editor [org.springframework.web.context.request.WebRequestInterceptorEditor] found for type org.springframework.web.context.request.WebRequestInterceptor according to 'Editor' suffix convention
+2018-03-22 17:44:19,758 - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+2018-03-22 17:44:19,761 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,761 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,761 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,761 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,762 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,762 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,762 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,762 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,763 - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2018-03-22 17:44:19,763 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-22 17:44:19,763 - Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-22 17:44:19,763 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,763 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,763 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,764 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,779 - Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' to allow for resolving potential circular references
+2018-03-22 17:44:19,794 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-22 17:44:19,794 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,794 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,794 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,794 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,794 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,794 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,794 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,794 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,797 - Finished creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-22 17:44:19,798 - Creating shared instance of singleton bean 'mvcPathMatcher'
+2018-03-22 17:44:19,798 - Creating instance of bean 'mvcPathMatcher'
+2018-03-22 17:44:19,798 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,798 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,798 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,798 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,799 - Eagerly caching bean 'mvcPathMatcher' to allow for resolving potential circular references
+2018-03-22 17:44:19,802 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,802 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,802 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,802 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,803 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,803 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,803 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,803 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,808 - Finished creating instance of bean 'mvcPathMatcher'
+2018-03-22 17:44:19,808 - Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2018-03-22 17:44:19,808 - Creating instance of bean 'mvcUrlPathHelper'
+2018-03-22 17:44:19,808 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,808 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,808 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,808 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,809 - Eagerly caching bean 'mvcUrlPathHelper' to allow for resolving potential circular references
+2018-03-22 17:44:19,822 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,823 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,823 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,823 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,823 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,824 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,824 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,824 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,835 - Finished creating instance of bean 'mvcUrlPathHelper'
+2018-03-22 17:44:19,836 - Creating shared instance of singleton bean 'mvcCorsConfigurations'
+2018-03-22 17:44:19,836 - Creating instance of bean 'mvcCorsConfigurations'
+2018-03-22 17:44:19,836 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,836 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,836 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,836 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,837 - Eagerly caching bean 'mvcCorsConfigurations' to allow for resolving potential circular references
+2018-03-22 17:44:19,851 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,851 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,851 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,851 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,851 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,851 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,851 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,851 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,858 - Finished creating instance of bean 'mvcCorsConfigurations'
+2018-03-22 17:44:19,859 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2018-03-22 17:44:19,859 - Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2018-03-22 17:44:19,859 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,860 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,861 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,861 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,876 - Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' to allow for resolving potential circular references
+2018-03-22 17:44:19,901 - Returning cached instance of singleton bean 'mvcPathMatcher'
+2018-03-22 17:44:19,902 - Returning cached instance of singleton bean 'mvcUrlPathHelper'
+2018-03-22 17:44:19,904 - Returning cached instance of singleton bean 'mvcCorsConfigurations'
+2018-03-22 17:44:19,909 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2018-03-22 17:44:19,909 - Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-22 17:44:19,909 - Mapped URL path [/upload/] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2018-03-22 17:44:19,910 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,910 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,910 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,910 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,910 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,910 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,910 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,910 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,912 - Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2018-03-22 17:44:19,913 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2018-03-22 17:44:19,913 - Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2018-03-22 17:44:19,913 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,913 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,913 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,913 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,914 - Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references
+2018-03-22 17:44:19,934 - Returning cached instance of singleton bean 'mvcCorsConfigurations'
+2018-03-22 17:44:19,938 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2018-03-22 17:44:19,938 - Looking for URL mappings in application context: org.springframework.context.support.ClassPathXmlApplicationContext@cd2dae5: startup date [Thu Mar 22 17:44:16 CST 2018]; root of context hierarchy
+2018-03-22 17:44:19,938 - Rejected bean name 'myTaskAnnotation': no URL paths identified
+2018-03-22 17:44:19,938 - Rejected bean name 'webSocketConfig': no URL paths identified
+2018-03-22 17:44:19,938 - Rejected bean name 'myHandler': no URL paths identified
+2018-03-22 17:44:19,938 - Rejected bean name 'customerDAOImpl': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'customerManagerImpl': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'ehCacheTestServiceImpl': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'testServiceImpl': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'AOPServiceImpl': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'mailServiceImpl': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.context.event.internalEventListenerProcessor': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.context.event.internalEventListenerFactory': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.context.annotation.internalAsyncAnnotationProcessor': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.context.annotation.internalScheduledAnnotationProcessor': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'aspectBean': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1': no URL paths identified
+2018-03-22 17:44:19,939 - Rejected bean name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'businessService': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'org.springframework.web.servlet.view.InternalResourceViewResolver#0': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'mvcResourceUrlProvider': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'mvcPathMatcher': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'mvcUrlPathHelper': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'mvcCorsConfigurations': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+2018-03-22 17:44:19,940 - Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'webSocketHandlerMapping': no URL paths identified
+2018-03-22 17:44:19,941 - Rejected bean name 'defaultSockJsTaskScheduler': no URL paths identified
+2018-03-22 17:44:19,942 - Rejected bean name 'environment': no URL paths identified
+2018-03-22 17:44:19,942 - Rejected bean name 'systemProperties': no URL paths identified
+2018-03-22 17:44:19,942 - Rejected bean name 'systemEnvironment': no URL paths identified
+2018-03-22 17:44:19,942 - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2018-03-22 17:44:19,942 - Rejected bean name 'messageSource': no URL paths identified
+2018-03-22 17:44:19,942 - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2018-03-22 17:44:19,943 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,943 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,943 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,943 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,943 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,943 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,943 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,943 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,946 - Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2018-03-22 17:44:19,946 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2018-03-22 17:44:19,948 - Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2018-03-22 17:44:19,949 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,950 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,950 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,950 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,951 - Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
+2018-03-22 17:44:19,953 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,953 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,953 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,953 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,953 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,953 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,953 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,954 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,954 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2018-03-22 17:44:19,955 - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2018-03-22 17:44:19,955 - Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2018-03-22 17:44:19,955 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,955 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,955 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,955 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,956 - Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
+2018-03-22 17:44:19,959 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,959 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,959 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,959 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,959 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,959 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,959 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,959 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,960 - Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2018-03-22 17:44:19,960 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-22 17:44:19,960 - Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-22 17:44:19,960 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,960 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,960 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,960 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,962 - Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1' to allow for resolving potential circular references
+2018-03-22 17:44:19,962 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-22 17:44:19,963 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,963 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,963 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,963 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,963 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,963 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,963 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,963 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,963 - Finished creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-22 17:44:19,963 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2018-03-22 17:44:19,963 - Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2018-03-22 17:44:19,963 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,964 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,964 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,964 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,965 - Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1' to allow for resolving potential circular references
+2018-03-22 17:44:19,966 - Returning cached instance of singleton bean 'mvcPathMatcher'
+2018-03-22 17:44:19,966 - Returning cached instance of singleton bean 'mvcUrlPathHelper'
+2018-03-22 17:44:19,966 - Returning cached instance of singleton bean 'mvcCorsConfigurations'
+2018-03-22 17:44:19,967 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2018-03-22 17:44:19,968 - Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-22 17:44:19,968 - Mapped URL path [/js/*] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#1'
+2018-03-22 17:44:19,968 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,968 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,968 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,968 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,969 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,969 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,969 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,969 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,970 - Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2018-03-22 17:44:19,970 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-22 17:44:19,970 - Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-22 17:44:19,970 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,970 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,970 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,971 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,973 - Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2' to allow for resolving potential circular references
+2018-03-22 17:44:19,974 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-22 17:44:19,974 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,974 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,974 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,974 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,974 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,974 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,974 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,974 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,974 - Finished creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-22 17:44:19,975 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2'
+2018-03-22 17:44:19,975 - Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2'
+2018-03-22 17:44:19,975 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,975 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,975 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,975 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,975 - Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2' to allow for resolving potential circular references
+2018-03-22 17:44:19,976 - Returning cached instance of singleton bean 'mvcPathMatcher'
+2018-03-22 17:44:19,976 - Returning cached instance of singleton bean 'mvcUrlPathHelper'
+2018-03-22 17:44:19,976 - Returning cached instance of singleton bean 'mvcCorsConfigurations'
+2018-03-22 17:44:19,977 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2018-03-22 17:44:19,977 - Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-22 17:44:19,977 - Mapped URL path [/css/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#2'
+2018-03-22 17:44:19,977 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,977 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,977 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,977 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,977 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,977 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,977 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,978 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,978 - Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2'
+2018-03-22 17:44:19,978 - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2018-03-22 17:44:19,978 - Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2018-03-22 17:44:19,978 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,978 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,978 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,978 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,980 - Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3' to allow for resolving potential circular references
+2018-03-22 17:44:19,981 - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2018-03-22 17:44:19,981 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,981 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,981 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,981 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,981 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,981 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,981 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,981 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,982 - Finished creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2018-03-22 17:44:19,982 - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3'
+2018-03-22 17:44:19,982 - Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3'
+2018-03-22 17:44:19,982 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,982 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,982 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,982 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,983 - Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3' to allow for resolving potential circular references
+2018-03-22 17:44:19,983 - Returning cached instance of singleton bean 'mvcPathMatcher'
+2018-03-22 17:44:19,983 - Returning cached instance of singleton bean 'mvcUrlPathHelper'
+2018-03-22 17:44:19,983 - Returning cached instance of singleton bean 'mvcCorsConfigurations'
+2018-03-22 17:44:19,984 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2018-03-22 17:44:19,984 - Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2018-03-22 17:44:19,984 - Mapped URL path [/html/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#3'
+2018-03-22 17:44:19,985 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,985 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,985 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,985 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,985 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,985 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,985 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,986 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,986 - Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3'
+2018-03-22 17:44:19,987 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2018-03-22 17:44:19,987 - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2018-03-22 17:44:19,987 - Returning cached instance of singleton bean 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration'
+2018-03-22 17:44:19,988 - Creating shared instance of singleton bean 'webSocketHandlerMapping'
+2018-03-22 17:44:19,988 - Creating instance of bean 'webSocketHandlerMapping'
+2018-03-22 17:44:19,988 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:19,989 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:19,989 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:19,989 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:19,989 - Returning cached instance of singleton bean 'org.springframework.web.socket.config.annotation.DelegatingWebSocketConfiguration'
+2018-03-22 17:44:19,995 - Returning cached instance of singleton bean 'defaultSockJsTaskScheduler'
+2018-03-22 17:44:19,996 - Returning cached instance of singleton bean 'myHandler'
+2018-03-22 17:44:20,030 - Eagerly caching bean 'webSocketHandlerMapping' to allow for resolving potential circular references
+2018-03-22 17:44:20,035 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2018-03-22 17:44:20,035 - Mapped URL path [/myHandler] onto handler of type [class org.springframework.web.socket.server.support.WebSocketHttpRequestHandler]
+2018-03-22 17:44:20,035 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:20,035 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:20,035 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:20,035 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:20,035 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#0'
+2018-03-22 17:44:20,035 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#1'
+2018-03-22 17:44:20,035 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#2'
+2018-03-22 17:44:20,035 - Returning cached instance of singleton bean 'org.springframework.aop.aspectj.AspectJPointcutAdvisor#3'
+2018-03-22 17:44:20,039 - Finished creating instance of bean 'webSocketHandlerMapping'
+2018-03-22 17:44:20,039 - Returning cached instance of singleton bean 'defaultSockJsTaskScheduler'
+2018-03-22 17:44:20,039 - Returning cached instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2018-03-22 17:44:20,213 - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@532721fd]
+2018-03-22 17:44:20,215 - Returning cached instance of singleton bean 'webSocketHandlerMapping'
+2018-03-22 17:44:20,215 - Returning cached instance of singleton bean 'lifecycleProcessor'
+2018-03-22 17:44:20,218 - Starting beans in phase 2147483647
+2018-03-22 17:44:20,219 - Starting bean 'webSocketHandlerMapping' of type [class org.springframework.web.socket.server.support.WebSocketHandlerMapping]
+2018-03-22 17:44:20,219 - Successfully started bean 'webSocketHandlerMapping'
+2018-03-22 17:44:20,224 - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalScheduledAnnotationProcessor'
+2018-03-22 17:44:20,224 - Returning cached instance of singleton bean 'mvcResourceUrlProvider'
+2018-03-22 17:44:20,226 - Looking for resource handler mappings
+2018-03-22 17:44:20,227 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2018-03-22 17:44:20,227 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2018-03-22 17:44:20,227 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2'
+2018-03-22 17:44:20,227 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3'
+2018-03-22 17:44:20,230 - Returning cached instance of singleton bean 'webSocketHandlerMapping'
+2018-03-22 17:44:20,230 - Found resource handler mapping: URL pattern="/upload/", locations=[class path resource [WEB-INF/static/upload/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@3546d80f]
+2018-03-22 17:44:20,231 - Found resource handler mapping: URL pattern="/js/*", locations=[class path resource [WEB-INF/static/js/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@579d011c]
+2018-03-22 17:44:20,231 - Found resource handler mapping: URL pattern="/css/**", locations=[class path resource [WEB-INF/static/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@3670f00]
+2018-03-22 17:44:20,231 - Found resource handler mapping: URL pattern="/html/**", locations=[class path resource [WEB-INF/static/html/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@452e26d0]
+2018-03-22 17:44:20,231 - Looking for resource handler mappings
+2018-03-22 17:44:20,231 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2018-03-22 17:44:20,231 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#1'
+2018-03-22 17:44:20,231 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#2'
+2018-03-22 17:44:20,231 - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#3'
+2018-03-22 17:44:20,231 - Returning cached instance of singleton bean 'webSocketHandlerMapping'
+2018-03-22 17:44:20,231 - Found resource handler mapping: URL pattern="/upload/", locations=[class path resource [WEB-INF/static/upload/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@3546d80f]
+2018-03-22 17:44:20,231 - Found resource handler mapping: URL pattern="/js/*", locations=[class path resource [WEB-INF/static/js/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@579d011c]
+2018-03-22 17:44:20,231 - Found resource handler mapping: URL pattern="/css/**", locations=[class path resource [WEB-INF/static/css/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@3670f00]
+2018-03-22 17:44:20,231 - Found resource handler mapping: URL pattern="/html/**", locations=[class path resource [WEB-INF/static/html/]], resolvers=[org.springframework.web.servlet.resource.PathResourceResolver@452e26d0]
+2018-03-22 17:44:20,232 - Returning cached instance of singleton bean 'defaultSockJsTaskScheduler'
+2018-03-22 17:44:20,248 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2018-03-22 17:44:20,248 - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2018-03-22 17:44:20,249 - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
