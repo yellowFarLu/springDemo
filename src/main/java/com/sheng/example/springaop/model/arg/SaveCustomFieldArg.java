@@ -4,6 +4,7 @@ import com.sheng.example.springaop.model.Payment;
 
 import java.io.Serializable;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author huangy
@@ -13,7 +14,7 @@ public class SaveCustomFieldArg implements Serializable {
 
     private String fsEa;
 
-    List<Payment> paymentField;
+    List<Map<String, Object>> paymentField;
 
     public String getFsEa() {
         return fsEa;
@@ -23,11 +24,11 @@ public class SaveCustomFieldArg implements Serializable {
         this.fsEa = fsEa;
     }
 
-    public List<Payment> getPaymentField() {
+    public List<Map<String, Object>> getPaymentField() {
         return paymentField;
     }
 
-    public void setPaymentField(List<Payment> paymentField) {
+    public void setPaymentField(List<Map<String, Object>> paymentField) {
         this.paymentField = paymentField;
     }
 

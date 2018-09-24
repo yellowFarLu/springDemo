@@ -1,6 +1,7 @@
 package com.sheng.example.springaop.controller;
 
 import com.sheng.example.springaop.model.CustomerPersonalStatistics;
+import com.sheng.example.springaop.model.Pager;
 import com.sheng.example.springaop.model.User;
 import com.sheng.example.springaop.model.result.AjaxResult;
 import com.sheng.example.springaop.param.Test;
@@ -80,7 +81,7 @@ public class MyController {
 
     @RequestMapping(value="/uploadparam")
     @ResponseBody
-    public String uploadParam(@RequestBody Test test) {
+    public String uploadParam(@RequestBody Pager pager, @RequestBody Test test) {
 
         LOGGER.info(test.toString());
 

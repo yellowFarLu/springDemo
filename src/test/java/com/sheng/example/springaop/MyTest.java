@@ -14,7 +14,7 @@ import java.util.List;
  * Created by Dell on 2017/1/20.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations="classpath:ApplicationContext.xml")
+@ContextConfiguration(locations= "classpath:applicationContext.xml")
 public class MyTest {
     @Autowired
     private AOPService aopService;

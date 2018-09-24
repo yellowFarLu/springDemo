@@ -1,0 +1,83 @@
+2018-07-24 14:44:41,299 - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-24 14:44:41,307 - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2018-07-24 14:44:41,501 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING}]
+2018-07-24 14:44:41,598 - Closing connection connectionId{localValue:1}
+2018-07-24 14:44:41,601 - Exception in monitor thread while connecting to server 127.0.0.1:27017
+com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='root', source='****', password=<hidden>, mechanismProperties={}}
+	at com.mongodb.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:61)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.authenticateAll(InternalStreamConnectionInitializer.java:99)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:44)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 127.0.0.1:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }
+	at com.mongodb.connection.CommandHelper.createCommandFailureException(CommandHelper.java:170)
+	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:123)
+	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32)
+	at com.mongodb.connection.SaslAuthenticator.sendSaslStart(SaslAuthenticator.java:95)
+	at com.mongodb.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:45)
+	... 5 more
+2018-07-24 14:44:41,606 - Updating cluster description to  {type=UNKNOWN, servers=[{address=127.0.0.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='root', source='****', password=<hidden>, mechanismProperties={}}}, caused by {com.mongodb.MongoCommandException: Command failed with error 18: 'Authentication failed.' on server 127.0.0.1:27017. The full response is { "ok" : 0.0, "errmsg" : "Authentication failed.", "code" : 18, "codeName" : "AuthenticationFailed" }}}]
+2018-07-24 14:54:16,028 - Cluster created with settings {hosts=[10.113.45.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-24 14:54:16,030 - Adding discovered server 10.113.45.1:27017 to client view of cluster
+2018-07-24 14:54:16,254 - Updating cluster description to  {type=UNKNOWN, servers=[{address=10.113.45.1:27017, type=UNKNOWN, state=CONNECTING}]
+2018-07-24 14:55:30,791 - Cluster created with settings {hosts=[10.113.45.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2018-07-24 14:55:30,798 - Adding discovered server 10.113.45.1:27017 to client view of cluster
+2018-07-24 14:55:31,044 - Updating cluster description to  {type=UNKNOWN, servers=[{address=10.113.45.1:27017, type=UNKNOWN, state=CONNECTING}]
+2018-07-24 14:55:31,135 - No server chosen by ReadPreferenceServerSelector{readPreference=primary} from cluster description ClusterDescription{type=UNKNOWN, connectionMode=MULTIPLE, all=[ServerDescription{address=10.113.45.1:27017, type=UNKNOWN, state=CONNECTING}]}. Waiting for 30000 ms before timing out
+2018-07-24 14:55:31,316 - Closing connection connectionId{localValue:1}
+2018-07-24 14:55:31,319 - Exception in monitor thread while connecting to server 10.113.45.1:27017
+com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='pay_toc', source='127.0.0.1', password=<hidden>, mechanismProperties={}}
+	at com.mongodb.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:61)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.authenticateAll(InternalStreamConnectionInitializer.java:99)
+	at com.mongodb.connection.InternalStreamConnectionInitializer.initialize(InternalStreamConnectionInitializer.java:44)
+	at com.mongodb.connection.InternalStreamConnection.open(InternalStreamConnection.java:115)
+	at com.mongodb.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:128)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: com.mongodb.MongoCommandException: Command failed with error 13: '' on server 10.113.45.1:27017. The full response is { "$err" : "not authorized for query on 127.0.0.1.$cmd", "code" : 13 }
+	at com.mongodb.connection.CommandHelper.createCommandFailureException(CommandHelper.java:170)
+	at com.mongodb.connection.CommandHelper.receiveCommandResult(CommandHelper.java:123)
+	at com.mongodb.connection.CommandHelper.executeCommand(CommandHelper.java:32)
+	at com.mongodb.connection.SaslAuthenticator.sendSaslStart(SaslAuthenticator.java:95)
+	at com.mongodb.connection.SaslAuthenticator.authenticate(SaslAuthenticator.java:45)
+	... 5 more
+2018-07-24 14:55:31,326 - Updating cluster description to  {type=UNKNOWN, servers=[{address=10.113.45.1:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSecurityException: Exception authenticating MongoCredential{mechanism=SCRAM-SHA-1, userName='pay_toc', source='127.0.0.1', password=<hidden>, mechanismProperties={}}}, caused by {com.mongodb.MongoCommandException: Command failed with error 13: '' on server 10.113.45.1:27017. The full response is { "$err" : "not authorized for query on 127.0.0.1.$cmd", "code" : 13 }}}]
+2018-07-24 14:55:32,025 - Closing connection connectionId{localValue:2}
+2018-07-24 14:55:32,720 - Closing connection connectionId{localValue:3}
+2018-07-24 14:55:33,421 - Closing connection connectionId{localValue:4}
+2018-07-24 14:55:34,183 - Closing connection connectionId{localValue:5}
+2018-07-24 14:55:34,906 - Closing connection connectionId{localValue:6}
+2018-07-24 14:55:35,605 - Closing connection connectionId{localValue:7}
+2018-07-24 14:55:36,305 - Closing connection connectionId{localValue:8}
+2018-07-24 14:55:36,995 - Closing connection connectionId{localValue:9}
+2018-07-24 14:55:37,685 - Closing connection connectionId{localValue:10}
+2018-07-24 14:55:38,381 - Closing connection connectionId{localValue:11}
+2018-07-24 14:55:39,067 - Closing connection connectionId{localValue:12}
+2018-07-24 14:55:39,772 - Closing connection connectionId{localValue:13}
+2018-07-24 14:55:40,464 - Closing connection connectionId{localValue:14}
+2018-07-24 14:55:41,165 - Closing connection connectionId{localValue:15}
+2018-07-24 14:55:41,856 - Closing connection connectionId{localValue:16}
+2018-07-24 14:55:42,550 - Closing connection connectionId{localValue:17}
+2018-07-24 14:55:43,247 - Closing connection connectionId{localValue:18}
+2018-07-24 14:55:43,942 - Closing connection connectionId{localValue:19}
+2018-07-24 14:55:44,630 - Closing connection connectionId{localValue:20}
+2018-07-24 14:55:45,526 - Closing connection connectionId{localValue:21}
+2018-07-24 14:55:46,216 - Closing connection connectionId{localValue:22}
+2018-07-24 14:55:46,975 - Closing connection connectionId{localValue:23}
+2018-07-24 14:55:47,671 - Closing connection connectionId{localValue:24}
+2018-07-24 14:55:48,356 - Closing connection connectionId{localValue:25}
+2018-07-24 14:55:49,045 - Closing connection connectionId{localValue:26}
+2018-07-24 14:55:49,732 - Closing connection connectionId{localValue:27}
+2018-07-24 14:55:50,422 - Closing connection connectionId{localValue:28}
+2018-07-24 14:55:51,117 - Closing connection connectionId{localValue:29}
+2018-07-24 14:55:51,821 - Closing connection connectionId{localValue:30}
+2018-07-24 14:55:52,510 - Closing connection connectionId{localValue:31}
+2018-07-24 14:55:53,212 - Closing connection connectionId{localValue:32}
+2018-07-24 14:55:53,915 - Closing connection connectionId{localValue:33}
+2018-07-24 14:55:54,608 - Closing connection connectionId{localValue:34}
+2018-07-24 14:55:55,303 - Closing connection connectionId{localValue:35}
+2018-07-24 14:55:55,996 - Closing connection connectionId{localValue:36}
+2018-07-24 14:55:56,696 - Closing connection connectionId{localValue:37}
+2018-07-24 14:55:57,391 - Closing connection connectionId{localValue:38}
+2018-07-24 14:55:58,080 - Closing connection connectionId{localValue:39}
+2018-07-24 14:55:59,777 - Closing connection connectionId{localValue:40}

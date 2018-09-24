@@ -18,16 +18,21 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
-        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/tool http://www.springframework.org/schema/tool/spring-tool.xsd">
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/tool
+        http://www.springframework.org/schema/tool/spring-tool.xsd">
+
+    <import resource="classpath:/spring/spring-db.xml"/>
+    <import resource="classpath:/spring/spring-redis.xml"/>
+
     <!-- 配置自动扫描的包 -->
-    <context:component-scan base-package="com.sheng.example">
-        <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
-        <context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
-    </context:component-scan>
+    <context:component-scan base-package="com"/>
+
     <!-- 导入资源文件 -->
-    <!--<context:property-placeholder location="classpath:db.properties"/>-->
+    <context:property-placeholder location="classpath:db.properties" ignore-unresolvable="true"/>
     <!-- 启动spring定时器 -->
     <task:annotation-driven/>
+    <tx:annotation-driven/>
 
 
     <bean id="aspectBean" class="com.sheng.example.springaop.aspect.TestAspect" />
@@ -72,11 +77,7 @@
         <!--<property name="configLocation" value="classpath:ehcache-setting.xml"></property>-->
     <!--</bean>-->
 
-    <bean id="springAction" name="springAction2"
-          class="com.huangy.ioc.set.SpringAction" autowire="byName">
-    </bean>
-
-    <bean id="springDao" class="com.huangy.ioc.set.SpringDao"/>
+    <bean id="springDao" name="springDao2" class="com.huangy.ioc.set.SpringDao"/>
 
 
 </beans>

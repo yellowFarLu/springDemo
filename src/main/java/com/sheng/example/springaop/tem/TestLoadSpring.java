@@ -12,7 +12,7 @@ public class TestLoadSpring {
 
     public static void main1(String[] args) {
         ApplicationContext applicationContext =
-                new ClassPathXmlApplicationContext("classpath:ApplicationContext.xml");
+                new ClassPathXmlApplicationContext("classpath:applicationContext.xml");
         SpringActionImpl springActionImpl = applicationContext.getBean(SpringActionImpl.class);
 
         System.out.println(springActionImpl);
@@ -20,7 +20,7 @@ public class TestLoadSpring {
 
     public static void main(String[] args) {
         ApplicationContext applicationContext =
-                new FileSystemXmlApplicationContext("classpath:ApplicationContext.xml");
+                new FileSystemXmlApplicationContext("classpath:applicationContext.xml");
         SpringActionImpl springActionImpl = applicationContext.getBean(SpringActionImpl.class);
 
         System.out.println(springActionImpl);
