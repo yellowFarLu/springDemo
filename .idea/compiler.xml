@@ -6,12 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-demo" />
         <module name="springAOP" />
+        <module name="springConsumer" />
+        <module name="springProvider" />
+        <module name="springProviderApi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="spring-demo" target="1.8" />
+      <module name="springConsumer" target="1.8" />
+      <module name="springProvider" target="1.8" />
+      <module name="springProviderApi" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

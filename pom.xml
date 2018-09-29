@@ -3,9 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.fxiaoke</groupId>
   <artifactId>springAOP</artifactId>
-  <packaging>war</packaging>
+  <packaging>pom</packaging>
   <version>1.0-SNAPSHOT</version>
-  <name>springAOP Maven Webapp</name>
+    <modules>
+        <module>springProvider</module>
+      <module>springConsumer</module>
+      <module>springProviderApi</module>
+    </modules>
+    <name>springAOP Maven Webapp</name>
   <url>http://maven.apache.org</url>
 
   <properties>
