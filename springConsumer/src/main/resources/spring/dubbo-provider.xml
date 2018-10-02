@@ -5,10 +5,9 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:service
+    <dubbo:reference
+            id="demoService"
             interface="com.huang.yuan.api.service.DemoService"
-            ref="demoServiceImpl"
-            provider="springProvider"
             version="1.0"/>
 
 </beans>

@@ -8,8 +8,8 @@
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <!-- Dubbo应用名称 -->
-    <dubbo:application id="springProviderApplication"
-                       name="springProviderApplication"
+    <dubbo:application id="springConsumerApplication"
+                       name="springConsumerApplication"
                        owner="huangyuan"
                        organization="huangyuan"
                        logger="slf4j"
@@ -36,8 +36,8 @@
 
         threads : 服务线程池大小
     -->
-    <dubbo:protocol id="springProviderProtocol"
-                    name="springProviderProtocol"
+    <dubbo:protocol id="springConsumerProtocol"
+                    name="springConsumerProtocol"
                     dispatcher="message"
                     threadpool="limited"
                     threads="205">
@@ -48,7 +48,7 @@
         register : 是否向此注册中心注册服务，如果设为false，将只订阅，不注册
         subscribe : 是否向此注册中心订阅服务，如果设为false，将只注册，不订阅
     -->
-    <dubbo:registry id="springProviderRegistry"
+    <dubbo:registry id="springConsumerRegistry"
                     protocol="dubbo"
                     address="zookeeper://127.0.0.1:2181"
                     session="60000"
@@ -58,30 +58,11 @@
                     port="2181">
     </dubbo:registry>
 
-    <!--服务
-        failover : 集群方式
-            failover 失败自动切换
-            failfast 快速失败，只发起一次调用，失败立即报错
-            failsafe 失败安全，出现异常时，直接忽略
-            failback 失败自动恢复，后台记录失败请求，定时重发。通常用于消息通知操作
-            forking 并行调用多个服务器，只要一个成功即返回
 
-        serialization : 协议序列化方式
-
-        retries : 远程调用的重试次数
-    -->
-    <dubbo:provider id="springProvider"
-                    application="springProviderApplication"
-                    registry="springProviderRegistry"
-                    protocol="dubbo"
-                    port="23801"
-                    cluster="failover"
-                    loadbalance="random"
-                    serialization="hessian2"
-                    retries="2"
+    <dubbo:consumer id="springConsumer"
+                    registry="springConsumerRegistry"
+                    init="false"
+                    check="false"
                     timeout="3000"
-                    proxy="javassist"
-                    delay="-1">
-    </dubbo:provider>
-
+                    retries="2"/>
 </beans>

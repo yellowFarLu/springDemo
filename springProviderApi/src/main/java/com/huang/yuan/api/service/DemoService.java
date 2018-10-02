@@ -9,4 +9,9 @@ public interface DemoService {
 
     ModelResult<String> test(String param);
 
+    String toString();
+
+    int hashCode();
+
+    boolean equalssss(Integer arg);
 }
