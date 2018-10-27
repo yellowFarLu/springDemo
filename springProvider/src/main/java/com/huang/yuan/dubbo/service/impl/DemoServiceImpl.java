@@ -32,7 +32,7 @@ public class DemoServiceImpl implements DemoService {
     }
 
     @Override
-    public boolean equalssss(Integer arg) {
+    public boolean equals(Integer arg) {
         return (random.nextInt(5) == 3);
     }
 }

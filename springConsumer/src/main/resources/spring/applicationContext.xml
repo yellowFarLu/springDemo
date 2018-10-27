@@ -11,7 +11,7 @@
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
     <import resource="classpath*:/spring/dubbo-config.xml"/>
-    <import resource="classpath*:/spring/dubbo-provider.xml"/>
+    <import resource="classpath*:/spring/dubbo-consumer.xml"/>
 
     <!-- 自动注入beanPostProcessor -->
     <context:annotation-config/>

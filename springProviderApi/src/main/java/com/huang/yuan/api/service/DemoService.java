@@ -13,5 +13,5 @@ public interface DemoService {
 
     int hashCode();
 
-    boolean equalssss(Integer arg);
+    boolean equals(Integer arg);
 }

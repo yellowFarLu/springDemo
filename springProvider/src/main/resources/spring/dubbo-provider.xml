@@ -11,4 +11,10 @@
             provider="springProvider"
             version="1.0"/>
 
+    <dubbo:service
+            interface="com.huang.yuan.api.service.DemoService2"
+            ref="demoService2Impl"
+            provider="springProvider"
+            version="1.0"/>
+
 </beans>

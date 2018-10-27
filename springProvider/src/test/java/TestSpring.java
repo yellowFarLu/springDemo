@@ -1,9 +1,5 @@
-package com.huang.yuan.test;
-
 import com.huang.yuan.api.model.ModelResult;
 import com.huang.yuan.api.service.DemoService;
-import com.huang.yuan.base.IntegrationTestBase;
-import com.huang.yuan.consumer.TestService;
 import org.junit.Test;
 
 import javax.annotation.Resource;
@@ -15,8 +11,6 @@ public class TestSpring extends IntegrationTestBase {
 
     @Resource
     private DemoService demoService;
-    @Resource
-    private TestService testService;
 
     @Test
     public void testdada() {
@@ -37,10 +31,5 @@ public class TestSpring extends IntegrationTestBase {
     @Test
     public void testEquals() {
         print(demoService.equals(1));
-    }
-
-    @Test
-    public void testSSS() {
-        testService.test();
     }
 }

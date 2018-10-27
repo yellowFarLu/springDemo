@@ -10,4 +10,9 @@
             interface="com.huang.yuan.api.service.DemoService"
             version="1.0"/>
 
+    <dubbo:reference
+            id="demoService2"
+            interface="com.huang.yuan.api.service.DemoService2"
+            version="1.0"/>
+
 </beans>

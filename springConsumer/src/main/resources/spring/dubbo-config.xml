@@ -15,8 +15,6 @@
                        logger="slf4j"
                        compiler="javassist"/>
 
-    <!-- 生产端配置  -->
-
     <!--协议
         dispatcher : 协议的消息派发方式，用于指定线程模型。取值说明如下
             all 所有消息都派发到线程池，包括请求，响应，连接事件，断开事件，心跳等。
@@ -64,5 +62,6 @@
                     init="false"
                     check="false"
                     timeout="3000"
-                    retries="2"/>
+                    retries="2"
+                    cluster="forking"/>
 </beans>
