@@ -8,7 +8,8 @@
     <dubbo:reference
             id="demoService"
             interface="com.huang.yuan.api.service.DemoService"
-            version="1.0"/>
+            version="1.0"
+            timeout="100000000"/>
 
     <dubbo:reference
             id="demoService2"

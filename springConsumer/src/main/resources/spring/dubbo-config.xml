@@ -61,7 +61,5 @@
                     registry="springConsumerRegistry"
                     init="false"
                     check="false"
-                    timeout="3000"
-                    retries="2"
-                    cluster="forking"/>
+                    cluster="failover"/>
 </beans>
