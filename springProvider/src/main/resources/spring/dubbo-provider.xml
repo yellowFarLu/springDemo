@@ -9,7 +9,8 @@
             interface="com.huang.yuan.api.service.DemoService"
             ref="demoServiceImpl"
             provider="springProvider"
-            version="1.0"/>
+            version="1.0"
+            group="demoImpl1"/>
 
     <dubbo:service
             interface="com.huang.yuan.api.service.DemoService2"

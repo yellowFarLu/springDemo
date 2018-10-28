@@ -14,4 +14,6 @@ public interface DemoService {
     int hashCode();
 
     boolean equals(Integer arg);
+
+    Object addAll(Object result, Object s2);
 }

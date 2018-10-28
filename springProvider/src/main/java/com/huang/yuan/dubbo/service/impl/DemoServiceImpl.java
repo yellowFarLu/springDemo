@@ -35,4 +35,9 @@ public class DemoServiceImpl implements DemoService {
     public boolean equals(Integer arg) {
         return (random.nextInt(5) == 3);
     }
+
+    @Override
+    public Object addAll(Object result, Object s2) {
+        return (String)result + (String) s2;
+    }
 }

@@ -9,7 +9,9 @@
             id="demoService"
             interface="com.huang.yuan.api.service.DemoService"
             version="1.0"
-            timeout="100000000"/>
+            timeout="100000000">
+        <dubbo:method name="test" merger=".addAll"/>
+    </dubbo:reference>
 
     <dubbo:reference
             id="demoService2"

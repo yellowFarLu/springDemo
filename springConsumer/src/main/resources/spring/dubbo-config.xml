@@ -61,5 +61,5 @@
                     registry="springConsumerRegistry"
                     init="false"
                     check="false"
-                    cluster="failover"/>
+                    cluster="mergeable"/>
 </beans>
