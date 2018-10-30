@@ -41,4 +41,9 @@ public class ModelResult<T> extends BaseResult implements Serializable {
                 "result=" + result +
                 "} " + super.toString();
     }
+
+    public ModelResult addAll(ModelResult result) {
+        result.setErrorMessage("这是合并函数");
+        return result;
+    }
 }
