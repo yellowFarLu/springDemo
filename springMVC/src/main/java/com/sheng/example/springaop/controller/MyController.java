@@ -28,7 +28,7 @@ public class MyController {
     @Resource
     private TestService testService;
 
-    @Autowired
+    @Resource
     private AOPService aopService;
 
     @ResponseBody

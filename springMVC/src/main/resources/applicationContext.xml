@@ -22,62 +22,59 @@
         http://www.springframework.org/schema/tool
         http://www.springframework.org/schema/tool/spring-tool.xsd">
 
-    <import resource="classpath:/spring/spring-db.xml"/>
-    <import resource="classpath:/spring/spring-redis.xml"/>
+    <!--<import resource="classpath:/spring/spring-db.xml"/>-->
+    <!--&lt;!&ndash;<import resource="classpath:/spring/spring-redis.xml"/>&ndash;&gt;-->
 
-    <!-- 配置自动扫描的包 -->
-    <context:component-scan base-package="com"/>
-
-    <!-- 导入资源文件 -->
-    <context:property-placeholder location="classpath:db.properties" ignore-unresolvable="true"/>
-    <!-- 启动spring定时器 -->
-    <task:annotation-driven/>
-    <tx:annotation-driven/>
+    <!--&lt;!&ndash; 导入资源文件 &ndash;&gt;-->
+    <!--<context:property-placeholder location="classpath:db.properties" ignore-unresolvable="true"/>-->
+    <!--&lt;!&ndash; 启动spring定时器 &ndash;&gt;-->
+    <!--&lt;!&ndash;<task:annotation-driven/>&ndash;&gt;-->
+    <!--&lt;!&ndash;<tx:annotation-driven/>&ndash;&gt;-->
 
 
-    <bean id="aspectBean" class="com.sheng.example.springaop.aspect.TestAspect" />
-    <!-- 配置事物切点，并把切点和事物关联起来-->
-    <aop:config>
-        <aop:aspect id="TestAspect" ref="aspectBean">
-            <!--配置com.spring.service包下所有类或接口的所有方法-->
-            <aop:pointcut id="businessService" expression="execution(* com.sheng.example.springaop.service.impl.AOPServiceImpl.aop*(..))" />
-            <aop:before pointcut-ref="businessService" method="doBefore"/>
-            <aop:after pointcut-ref="businessService" method="doAfter"/>
-            <aop:around pointcut-ref="businessService" method="doAround"/>
-            <aop:after-throwing pointcut-ref="businessService" method="doThrowing" throwing="ex"/>
-        </aop:aspect>
-    </aop:config>
+    <!--<bean id="aspectBean" class="com.sheng.example.springaop.aspect.TestAspect" />-->
+    <!--&lt;!&ndash; 配置事物切点，并把切点和事物关联起来&ndash;&gt;-->
+    <!--<aop:config>-->
+        <!--<aop:aspect id="TestAspect" ref="aspectBean">-->
+            <!--&lt;!&ndash;配置com.spring.service包下所有类或接口的所有方法&ndash;&gt;-->
+            <!--<aop:pointcut id="businessService" expression="execution(* com.sheng.example.springaop.service.impl.AOPServiceImpl.aop*(..))" />-->
+            <!--<aop:before pointcut-ref="businessService" method="doBefore"/>-->
+            <!--<aop:after pointcut-ref="businessService" method="doAfter"/>-->
+            <!--<aop:around pointcut-ref="businessService" method="doAround"/>-->
+            <!--<aop:after-throwing pointcut-ref="businessService" method="doThrowing" throwing="ex"/>-->
+        <!--</aop:aspect>-->
+    <!--</aop:config>-->
 
-    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
-    <!--<bean id="myInterceptor" class="com.sheng.example.springaop.aspect.TestAnnotationAspect"/>-->
+    <!--<aop:aspectj-autoproxy></aop:aspectj-autoproxy>-->
+    <!--&lt;!&ndash;<bean id="myInterceptor" class="com.sheng.example.springaop.aspect.TestAnnotationAspect"/>&ndash;&gt;-->
 
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-          p:prefix="/WEB-INF/jsp/"
-          p:suffix=".jsp"
-    />
+    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"-->
+          <!--p:prefix="/WEB-INF/jsp/"-->
+          <!--p:suffix=".jsp"-->
+    <!--/>-->
 
-    <!-- 解决静态资源问题
-   mapping：映射
-   location：本地资源路径，注意必须是webapp根目录下的路径。两个*，它表示映射resources/下所有的URL，包括子路径（即接多个/）
-   -->
-    <mvc:resources location="/WEB-INF/static/upload/" mapping="/upload/"/>
-    <mvc:resources location="/WEB-INF/static/js/" mapping="/js/*"/>
-    <mvc:resources location="/WEB-INF/static/css/" mapping="/css/**"/>
-    <mvc:resources location="/WEB-INF/static/html/" mapping="/html/**"/>
+    <!--&lt;!&ndash; 解决静态资源问题-->
+   <!--mapping：映射-->
+   <!--location：本地资源路径，注意必须是webapp根目录下的路径。两个*，它表示映射resources/下所有的URL，包括子路径（即接多个/）-->
+   <!--&ndash;&gt;-->
+    <!--<mvc:resources location="/WEB-INF/static/upload/" mapping="/upload/"/>-->
+    <!--<mvc:resources location="/WEB-INF/static/js/" mapping="/js/*"/>-->
+    <!--<mvc:resources location="/WEB-INF/static/css/" mapping="/css/**"/>-->
+    <!--<mvc:resources location="/WEB-INF/static/html/" mapping="/html/**"/>-->
 
-    <!-- 缓存设置 -->
-    <!-- 启动缓存 -->
-    <!--<cache:annotation-driven cache-manager="cacheManager" />-->
+    <!--&lt;!&ndash; 缓存设置 &ndash;&gt;-->
+    <!--&lt;!&ndash; 启动缓存 &ndash;&gt;-->
+    <!--&lt;!&ndash;<cache:annotation-driven cache-manager="cacheManager" />&ndash;&gt;-->
 
-    <!--<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">-->
-        <!--<property name="cacheManager" ref="ehcache"></property>-->
-    <!--</bean>-->
+    <!--&lt;!&ndash;<bean id="cacheManager" class="org.springframework.cache.ehcache.EhCacheCacheManager">&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="cacheManager" ref="ehcache"></property>&ndash;&gt;-->
+    <!--&lt;!&ndash;</bean>&ndash;&gt;-->
 
-    <!--<bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">-->
-        <!--<property name="configLocation" value="classpath:ehcache-setting.xml"></property>-->
-    <!--</bean>-->
+    <!--&lt;!&ndash;<bean id="ehcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">&ndash;&gt;-->
+        <!--&lt;!&ndash;<property name="configLocation" value="classpath:ehcache-setting.xml"></property>&ndash;&gt;-->
+    <!--&lt;!&ndash;</bean>&ndash;&gt;-->
 
-    <bean id="springDao" name="springDao2" class="com.huangy.ioc.set.SpringDao"/>
+    <!--<bean id="springDao" name="springDao2" class="com.huangy.ioc.set.SpringDao"/>-->
 
 
 </beans>

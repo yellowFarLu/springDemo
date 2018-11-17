@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.socket.TextMessage;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 
 /**
@@ -17,8 +18,8 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class SocketController {
 
-    @Autowired
-    MyHandler handler;
+    @Resource
+    MyHandler myHandler;
 
 
     @RequestMapping("/login/{userId}")
@@ -32,7 +33,7 @@ public class SocketController {
 
     @RequestMapping("/message")
     public @ResponseBody String sendMessage() {
-        boolean hasSend = handler.sendMessageToUser(4, new TextMessage("发送一条消息"));
+        boolean hasSend = myHandler.sendMessageToUser(4, new TextMessage("发送一条消息"));
         System.out.println(hasSend);
         return "message";
     }

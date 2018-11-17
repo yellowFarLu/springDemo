@@ -3,7 +3,7 @@
         "http://java.sun.com/dtd/web-app_2_3.dtd" >
 <web-app version="3.0"
          xmlns="http://java.sun.com/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance http://www.springmodules.org/schema/cache/springmodules-cache.xsd http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd"
+         xmlns:xsi="xsd http://www.springmodules.org/schema/cache/springmodules-ehcache.xsd"
          xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
     http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
 
@@ -14,8 +14,9 @@
   <!-- 指定Spring Bean的配置文件所在目录。默认配置在WEB-INF目录下 -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:applicationContext.xml</param-value>
+    <param-value>classpath:springmvc.xml</param-value>
   </context-param>
+
   <servlet>
     <servlet-name>dispatcherServlet</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -29,7 +30,6 @@
       <param-name>contextConfigLocation</param-name>
       <param-value>classpath:springmvc.xml</param-value>
     </init-param>
-    <async-supported>true</async-supported>
     <load-on-startup>1</load-on-startup>
   </servlet>
 
