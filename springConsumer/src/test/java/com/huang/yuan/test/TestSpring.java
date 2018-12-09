@@ -15,8 +15,8 @@ public class TestSpring extends IntegrationTestBase {
 
     @Resource
     private DemoService demoService;
-    @Resource
-    private TestService testService;
+//    @Resource
+//    private TestService testService;
 
     @Test
     public void testdada() {
@@ -39,8 +39,8 @@ public class TestSpring extends IntegrationTestBase {
         print(demoService.equals(1));
     }
 
-    @Test
-    public void testSSS() {
-        testService.test();
-    }
+//    @Test
+//    public void testSSS() {
+//        testService.test();
+//    }
 }

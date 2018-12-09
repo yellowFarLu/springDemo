@@ -2,6 +2,8 @@ package com.huang.yuan.dubbo.service.impl;
 
 import com.huang.yuan.api.model.ModelResult;
 import com.huang.yuan.api.service.DemoService;
+import com.huang.yuan.api.service.DemoService2;
+import com.huang.yuan.dubbo.model.TestBean;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -15,6 +17,9 @@ import java.util.Random;
 public class DemoServiceImpl implements DemoService {
 
     private Random random = new Random();
+
+    @Resource
+    private DemoService2 demoService2;
 
     @Override
     public ModelResult<String> test(String param) {

@@ -10,8 +10,7 @@
        http://www.springframework.org/schema/aop
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <import resource="classpath*:/spring/dubbo-config.xml"/>
-    <import resource="classpath*:/spring/dubbo-provider.xml"/>
+    <context:component-scan base-package="com.huang.yuan.dubbo"/>
 
     <!-- 自动注入beanPostProcessor -->
     <context:annotation-config/>
@@ -23,7 +22,8 @@
     -->
     <aop:aspectj-autoproxy/>
 
-    <context:component-scan base-package="com.huang.yuan.dubbo"/>
+    <import resource="classpath*:/spring/dubbo-config.xml"/>
+    <import resource="classpath*:/spring/dubbo-provider.xml"/>
 
     <bean id="testBean" class="com.huang.yuan.dubbo.model.TestBean" init-method="test"/>
 

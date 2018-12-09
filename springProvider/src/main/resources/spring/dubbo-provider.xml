@@ -10,7 +10,7 @@
             ref="demoServiceImpl"
             provider="springProvider"
             version="1.0"
-            group="group1"/>
+            delay="5000"/>
 
     <dubbo:service
             interface="com.huang.yuan.api.service.DemoService2"

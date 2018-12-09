@@ -10,6 +10,7 @@
       <module>springConsumer</module>
       <module>springProviderApi</module>
         <module>springMVC</module>
+        <module>springConsumerApi</module>
     </modules>
     <name>springAOP Maven Webapp</name>
   <url>http://maven.apache.org</url>

@@ -21,22 +21,9 @@
 		</encoder>
 	</appender>
 
-    <!-- 异步输出日志避免阻塞服务 -->
-    <appender name="ASYNC" class="ch.qos.logback.classic.AsyncAppender">
-        <queueSize>512</queueSize>
-        <appender-ref ref="stdout"/>
-        <includeCallerData>true</includeCallerData>
-    </appender>
-
-    <!--添加业务日志级别, 方便在日志中心调整 -->
-    <logger name="com.facishare.wechat.service.management" level="DEBUG"/>
-
-    <!-- 配置基础组件为WARN级别，避免打印过多影响服务自己日志 -->
-    <logger name="druid.sql" level="DEBUG"/>
-    <logger name="org.hibernate" level="WARN"/>
-    <logger name="org.springframework" level="WARN"/>
-    <logger name="org.apache" level="WARN"/>
-    <logger name="com.alibaba" level="WARN"/>
+    <logger name="com.huang.yuan" level="DEBUG">
+        <appender-ref ref="stdout" />
+    </logger>
 
     <root level="INFO">
         <appender-ref ref="ASYNC" />

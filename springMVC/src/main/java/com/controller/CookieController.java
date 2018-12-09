@@ -16,14 +16,42 @@ import javax.servlet.http.HttpServletResponse;
  * @author huangy on 2018/11/17
  */
 @Controller
-public class CookieController {
+public class CookieController extends BaseController {
 
     @Resource
     private AOPService aopService;
 
     @ResponseBody
     @RequestMapping("/springcookie")
-    public User springCookie(@ModelAttribute User model){
+    public User springCookie(@ModelAttribute User model, HttpServletRequest request,
+                             HttpServletResponse response) {
+        // request.getContextPath()拿到的是你的web项目的根路径（tomcat中application context的值）
+        LOGGER.info("request.contextPath={}", request.getContextPath());
+
+        if (request.getCookies() != null) {
+            for (Cookie cookie : request.getCookies()) {
+                LOGGER.info("request.cookie.Comment={}", cookie.getComment());
+                LOGGER.info("request.cookie.Domain={}", cookie.getDomain());
+                LOGGER.info("request.cookie.MaxAge={}", cookie.getMaxAge());
+                LOGGER.info("request.cookie.Name={}", cookie.getName());
+                LOGGER.info("request.cookie.Path={}", cookie.getPath());
+                LOGGER.info("request.cookie.Secure={}", cookie.getSecure());
+                LOGGER.info("request.cookie.Value={}", cookie.getValue());
+                LOGGER.info("request.cookie.Version={}", cookie.getVersion());
+            }
+        } else {
+            LOGGER.info("---------- not cookie");
+        }
+
+        Cookie cookie = new Cookie("MyCookie", "SESSIONID=1");
+//        cookie.setPath("/web");
+//        cookie.setMaxAge(0);
+//        cookie.setSecure(true);
+        cookie.setDomain("localhost");
+        response.addCookie(cookie);
+
+        LOGGER.info("response={}", response);
+
         return model;
     }
 

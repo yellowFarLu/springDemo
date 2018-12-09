@@ -11,12 +11,15 @@
             version="1.0"
             timeout="100000000"
             group="*">
-        <dubbo:method name="test" merger="myMerger"/>
+        <dubbo:method name="test" merger="myMerger">
+            <dubbo:argument index="0" type="java.lang.String"/>
+        </dubbo:method>
     </dubbo:reference>
 
     <dubbo:reference
             id="demoService2"
             interface="com.huang.yuan.api.service.DemoService2"
-            version="1.0"/>
+            version="1.0">
+    </dubbo:reference>
 
 </beans>
