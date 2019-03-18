@@ -11,10 +11,10 @@ public class Client {
         conn.setSource("127.0.0.1");
         conn.setDbName("runoob");
         conn.setDriverName(DBConnection.DriverName.mongodb);
-        conn.setServerHost("10.113.45.1");
+        conn.setServerHost("");
         conn.setServerPort("27017");
         conn.setUserName("pay_toc");
-        conn.setPassword("0L3MkUu1oVNMDj3GSLD8");
+        conn.setPassword("");
         String querySqlWithFields = "db.getCollection('toc_log').find({})";
 
         Crud.Connect(conn);
