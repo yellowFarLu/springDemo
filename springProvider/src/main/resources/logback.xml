@@ -1,32 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configuration debug="false">
+<configuration>
 
-    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
-    <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-    <Pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} %-5level[%thread]%logger{56}.%method:%L -%msg%n</Pattern>
-    </encoder>
-    </appender>
-
-	<appender name="ROLLING-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>${catalina.base}/logs/wechat-service-management.log</file>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<FileNamePattern>${catalina.base}/logs/wechat-service-management-%d{yyyy-MM-dd}.%i.log.zip
-			</FileNamePattern>
-			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
-				<maxFileSize>100MB</maxFileSize>
-			</timeBasedFileNamingAndTriggeringPolicy>
-		</rollingPolicy>
-		<encoder  class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
-			<pattern>[%d{yyyy/MM/dd-HH:mm:ss.SSS}]-[%level]-[%thread]-[%class.%method:%line]-[%X] - %msg%n</pattern>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
 		</encoder>
 	</appender>
 
-    <logger name="com.huang.yuan" level="DEBUG">
-        <appender-ref ref="stdout" />
-    </logger>
-
-    <root level="INFO">
-        <appender-ref ref="ASYNC" />
-    </root>
-
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT"/>
+	</root>
 </configuration>

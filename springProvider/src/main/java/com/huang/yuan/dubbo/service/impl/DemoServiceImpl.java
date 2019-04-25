@@ -4,6 +4,8 @@ import com.huang.yuan.api.model.ModelResult;
 import com.huang.yuan.api.service.DemoService;
 import com.huang.yuan.api.service.DemoService2;
 import com.huang.yuan.dubbo.model.TestBean;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
@@ -16,6 +18,10 @@ import java.util.Random;
 @Service
 public class DemoServiceImpl implements DemoService {
 
+    private static final Logger spLogger = LoggerFactory.getLogger("com.huang.yuan.dubbo.service.impl.DemoServiceImpl");
+
+    private static final Logger orLogger = LoggerFactory.getLogger(DemoService2Impl.class);
+
     private Random random = new Random();
 
     @Resource
@@ -23,6 +29,7 @@ public class DemoServiceImpl implements DemoService {
 
     @Override
     public ModelResult<String> test(String param) {
+        spLogger.error("执行函数啦");
         return new ModelResult<>(param);
     }
 

@@ -22,6 +22,32 @@
     -->
     <aop:aspectj-autoproxy/>
 
+    <aop:config>
+        <aop:aspect id="logMonitor" ref="logAspect1" order="1">
+            <aop:pointcut id="monitor"
+                          expression="execution(* com.huang.yuan.dubbo.service.impl.DemoServiceImpl.*(..))
+                       and !execution(* com.huang.yuan.dubbo.service.impl.DemoServiceImpl.test(..))" />
+            <aop:around pointcut-ref="monitor" method="around"/>
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:aspect id="logMonitor" ref="logAspect2" order="2">
+            <aop:pointcut id="monitor"
+                          expression="execution(* com.huang.yuan.dubbo.service.impl.DemoServiceImpl.test(..))" />
+            <aop:around pointcut-ref="monitor" method="around"/>
+        </aop:aspect>
+    </aop:config>
+
+    <aop:config>
+        <aop:aspect id="logMonitor" ref="logAspect3" order="3">
+            <aop:pointcut id="monitor"
+                          expression="execution(* com.huang.yuan.dubbo.service.impl.DemoServiceImpl.test(..))
+                            and !execution(* com.huang.yuan.dubbo.service.impl.DemoServiceImpl.test(..))" />
+            <aop:around pointcut-ref="monitor" method="around"/>
+        </aop:aspect>
+    </aop:config>
+
     <import resource="classpath*:/spring/dubbo-config.xml"/>
     <import resource="classpath*:/spring/dubbo-provider.xml"/>
 

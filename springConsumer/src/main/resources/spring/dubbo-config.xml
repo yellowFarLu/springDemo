@@ -30,13 +30,27 @@
                     port="2181">
     </dubbo:registry>
 
+    <!--注册中心配置
+        session : 会话中心超时时间
+        register : 是否向此注册中心注册服务，如果设为false，将只订阅，不注册
+        subscribe : 是否向此注册中心订阅服务，如果设为false，将只注册，不订阅
+    -->
+    <dubbo:registry id="springConsumerRegistry2"
+                    protocol="dubbo"
+                    address="zookeeper://127.0.0.1:2183"
+                    session="60000"
+                    register="true"
+                    subscribe="true"
+                    check="false"
+                    port="2183">
+    </dubbo:registry>
 
     <dubbo:consumer id="springConsumer"
-                    registry="springConsumerRegistry"
                     init="false"
                     check="false"
                     cluster="mergeable"
-                    timeout="10">
+                    timeout="10"
+                    filter="yuanFilter,filter2">
     </dubbo:consumer>
 
     <!--协议
@@ -79,7 +93,6 @@
     -->
     <dubbo:provider id="springProvider"
                     application="springConsumerApplication"
-                    registry="springConsumerRegistry"
                     protocol="dubbo"
                     port="23801"
                     cluster="failover"

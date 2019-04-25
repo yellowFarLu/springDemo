@@ -23,12 +23,6 @@ public class IntegrationTestBase extends AbstractJUnit4SpringContextTests {
 
     }
 
-    public void print(Object result) {
-        System.err.println("--------------------start----------------------------------");
-        System.err.println("result:" +  JSON.toJSONString(result));
-        System.err.println("--------------------end------------------------------------");
-    }
-
     public void log(Object result) {
         logger.debug("--------------------start----------------------------------");
         logger.debug("result:" + result);

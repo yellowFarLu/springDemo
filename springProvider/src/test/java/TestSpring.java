@@ -15,21 +15,6 @@ public class TestSpring extends IntegrationTestBase {
     @Test
     public void testdada() {
         ModelResult result = demoService.test("huangyuan");
-        print(result);
-    }
-
-    @Test
-    public void testString() {
-        print(demoService.toString());
-    }
-
-    @Test
-    public void testHashCode() {
-        print(demoService.hashCode());
-    }
-
-    @Test
-    public void testEquals() {
-        print(demoService.equals(1));
+        log(result);
     }
 }

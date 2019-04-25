@@ -55,7 +55,7 @@
                     register="true"
                     subscribe="true"
                     check="false"
-                    port="2181">
+                    port="2181" client="zkclient">
     </dubbo:registry>
 
     <!--服务
@@ -83,5 +83,7 @@
                     proxy="javassist"
                     delay="-1">
     </dubbo:provider>
+
+    <!--<dubbo:consumer filter="providerFilter"/>-->
 
 </beans>
