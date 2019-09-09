@@ -4,6 +4,7 @@ import com.transaction.dao.ClassDAO;
 import com.transaction.model.C;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import redis.clients.jedis.Jedis;
 //import redis.clients.jedis.Jedis;
 
 import javax.annotation.Resource;
@@ -16,8 +17,8 @@ public class ClassManagerImpl {
 
     @Resource
     private ClassDAO classDAO;
-//    @Resource
-//    private Jedis jedis;
+    @Resource
+    private Jedis jedis;
 
     @Transactional
     public void insertClassForn(int n) throws Exception {
@@ -29,7 +30,7 @@ public class ClassManagerImpl {
             classDAO.add(c);
         }
 
-//        jedis.set("123456789", "123456789");
+        jedis.set("123456789", "123456789");
 
         throw new RuntimeException();
     }

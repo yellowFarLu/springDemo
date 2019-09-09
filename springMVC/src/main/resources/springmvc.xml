@@ -5,11 +5,13 @@
        xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:tx="http://www.springframework.org/schema/tx"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
         http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
-        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
 
 
     <!-- 配置自动扫描的包 -->
@@ -97,6 +99,19 @@
     <!--</bean>-->
 
     <bean id="springDao" name="springDao2" class="com.huangy.ioc.set.SpringDao"/>
+
+    <bean id="beanNameTestModel" class="com.model.BeanNameTestModel" init-method="initMethodDemo" destroy-method="destoryMethodDemo"/>
+
+<!--    <bean id="demoA" class="com.model.DemoA" scope="singleton">-->
+<!--        <property name="demoB" ref="demoB"/>-->
+<!--     </bean>-->
+<!--    <bean id="demoB" class="com.model.DemoB" scope="singleton">-->
+<!--        <property name="demoA" ref="demoA"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="demoC" class="com.model.DemoC">-->
+<!--        <constructor-arg ref="demoA"/>-->
+<!--    </bean>-->
 
 
 </beans>
