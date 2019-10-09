@@ -7,8 +7,8 @@
   <version>1.0-SNAPSHOT</version>
     <modules>
         <module>springProvider</module>
-      <module>springConsumer</module>
-      <module>springProviderApi</module>
+        <module>springConsumer</module>
+        <module>springProviderApi</module>
         <module>springMVC</module>
         <module>springConsumerApi</module>
     </modules>
