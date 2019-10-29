@@ -1,0 +1,3 @@
+dubbo=com.huang.yuan.dubbo.adaptive.DubboAdaptiveExtImpl
+spring=com.huang.yuan.dubbo.adaptive.SpringAdaptiveExtImpl
+springboot=com.huang.yuan.dubbo.adaptive.SpringBootAdaptiveExtImpl

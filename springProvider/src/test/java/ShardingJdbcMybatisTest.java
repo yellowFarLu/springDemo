@@ -15,8 +15,8 @@ import com.study.dangdang.sharding.jdbc.service.StudentService;
 import com.study.dangdang.sharding.jdbc.service.UserService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath*:/spring/spring-database.xml",
-        "classpath*:/spring/spring-sharding.xml" })
+@ContextConfiguration(locations = {"classpath*:/spring-database.xml",
+        "classpath*:/spring-sharding.xml"})
 public class ShardingJdbcMybatisTest {
 
     @Resource

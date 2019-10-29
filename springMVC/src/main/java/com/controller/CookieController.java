@@ -2,8 +2,7 @@ package com.controller;
 
 import com.sheng.example.springaop.model.User;
 import com.sheng.example.springaop.service.AOPService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpMethod;
+import com.huang.yuan.dubbo.utils.SpringContextUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,21 +25,21 @@ public class CookieController extends BaseController {
     public User springCookie(@ModelAttribute User model, HttpServletRequest request,
                              HttpServletResponse response) {
         // request.getContextPath()拿到的是你的web项目的根路径（tomcat中application context的值）
-        LOGGER.info("request.contextPath={}", request.getContextPath());
+//        LOGGER.info("request.contextPath={}", request.getContextPath());
 
         if (request.getCookies() != null) {
             for (Cookie cookie : request.getCookies()) {
-                LOGGER.info("request.cookie.Comment={}", cookie.getComment());
-                LOGGER.info("request.cookie.Domain={}", cookie.getDomain());
-                LOGGER.info("request.cookie.MaxAge={}", cookie.getMaxAge());
-                LOGGER.info("request.cookie.Name={}", cookie.getName());
-                LOGGER.info("request.cookie.Path={}", cookie.getPath());
-                LOGGER.info("request.cookie.Secure={}", cookie.getSecure());
-                LOGGER.info("request.cookie.Value={}", cookie.getValue());
-                LOGGER.info("request.cookie.Version={}", cookie.getVersion());
+//                LOGGER.info("request.cookie.Comment={}", cookie.getComment());
+//                LOGGER.info("request.cookie.Domain={}", cookie.getDomain());
+//                LOGGER.info("request.cookie.MaxAge={}", cookie.getMaxAge());
+//                LOGGER.info("request.cookie.Name={}", cookie.getName());
+//                LOGGER.info("request.cookie.Path={}", cookie.getPath());
+//                LOGGER.info("request.cookie.Secure={}", cookie.getSecure());
+//                LOGGER.info("request.cookie.Value={}", cookie.getValue());
+//                LOGGER.info("request.cookie.Version={}", cookie.getVersion());
             }
         } else {
-            LOGGER.info("---------- not cookie");
+//            LOGGER.info("---------- not cookie");
         }
 
         Cookie cookie = new Cookie("MyCookie", "SESSIONID=1");
@@ -50,9 +49,16 @@ public class CookieController extends BaseController {
         cookie.setDomain("localhost");
         response.addCookie(cookie);
 
-        LOGGER.info("response={}", response);
+//        LOGGER.info("response={}", response);
+
+        // 测试Bean的范围
+        testScope();
 
         return model;
+    }
+
+    private void testScope() {
+//        System.out.println((ScopeBean)SpringContextUtil.getBean("scopeBean"));
     }
 
     @ModelAttribute

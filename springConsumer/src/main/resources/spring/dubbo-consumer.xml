@@ -9,10 +9,9 @@
             id="demoService"
             interface="com.huang.yuan.api.service.DemoService"
             version="1.0"
-            timeout="100000000">
-        <dubbo:method name="test" merger="myMerger">
-            <dubbo:argument index="0" type="java.lang.String"/>
-        </dubbo:method>
+            timeout="100000000"
+            async="true"
+            filter="testFilter">
     </dubbo:reference>
 
     <dubbo:reference

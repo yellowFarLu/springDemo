@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import javax.annotation.PostConstruct;
 import javax.annotation.Resource;
 import java.util.Random;
+import java.util.concurrent.CompletableFuture;
 
 /**
  * @author huangy on 2018/9/29
@@ -28,9 +29,19 @@ public class DemoServiceImpl implements DemoService {
     private DemoService2 demoService2;
 
     @Override
-    public ModelResult<String> test(String param) {
-        spLogger.error("执行函数啦");
-        return new ModelResult<>(param);
+    public CompletableFuture<ModelResult<String>> test(String param) {
+
+        spLogger.warn("执行函数啦，提供者睡一会");
+
+        try {
+            Thread.sleep(3000);
+        } catch (Exception e) {
+            spLogger.warn("Exception   ", e);
+        }
+
+        spLogger.warn("提供者休眠一会");
+
+        return CompletableFuture.completedFuture(new ModelResult<>(param));
     }
 
     @Override

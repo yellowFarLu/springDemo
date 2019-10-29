@@ -15,6 +15,10 @@
     <!-- 自动注入beanPostProcessor -->
     <context:annotation-config/>
 
+    <import resource="classpath:/spring/dubbo-config.xml"/>
+    <import resource="classpath:/spring/dubbo-provider.xml"/>
+    <import resource="classpath:/spring/dubbo-consumer.xml"/>
+
     <!-- 通过aop命名空间的<aop:aspectj-autoproxy />声明自动为spring容器中那些配置@aspectJ切面的bean创建代理，织入切面
         有一个proxy-target-class属性，默认为false，表示使用jdk动态代理织入增强，
         当配为<aop:aspectj-autoproxy  poxy-target-class="true"/>时，表示使用CGLib动态代理技术织入增强。
@@ -47,9 +51,6 @@
             <aop:around pointcut-ref="monitor" method="around"/>
         </aop:aspect>
     </aop:config>
-
-    <import resource="classpath*:/spring/dubbo-config.xml"/>
-    <import resource="classpath*:/spring/dubbo-provider.xml"/>
 
     <bean id="testBean" class="com.huang.yuan.dubbo.model.TestBean" init-method="test"/>
 

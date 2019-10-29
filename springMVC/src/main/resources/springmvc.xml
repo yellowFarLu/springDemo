@@ -114,4 +114,6 @@
 <!--    </bean>-->
 
 
+    <bean id="scopeBean" class="com.model.ScopeBean" scope="request"/>
+
 </beans>

@@ -84,6 +84,6 @@
                     delay="-1">
     </dubbo:provider>
 
-    <!--<dubbo:consumer filter="providerFilter"/>-->
+<!--    <dubbo:consumer filter="providerFilter"/>-->
 
 </beans>

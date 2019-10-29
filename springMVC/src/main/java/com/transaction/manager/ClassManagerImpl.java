@@ -12,7 +12,7 @@ import javax.annotation.Resource;
 /**
  * @author huangy on 2018/7/15
  */
-@Service
+//@Service
 public class ClassManagerImpl {
 
     @Resource

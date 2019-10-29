@@ -6,7 +6,6 @@ import com.alibaba.dubbo.rpc.*;
 /**
  * @author huangy on 2018/12/23
  */
-@Activate
 public class ProviderFilter implements Filter {
 
     @Override
