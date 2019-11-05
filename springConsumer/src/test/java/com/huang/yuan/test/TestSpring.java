@@ -22,14 +22,13 @@ public class TestSpring extends IntegrationTestBase {
 
     @Test
     public void testdada() throws Exception {
+       for (int i = 0; i < 10; i++) {
+            new Thread(()->{
+                demoService.test("huangyuan");
+            }).start();
+       }
 
-        RpcContext.getContext().asyncCall(() -> {
-            System.out.println("开始");
-            demoService.test("huangyuan");
-            System.out.println("立即返回");
-        });
-
-        Thread.sleep(1000000);
+       Thread.sleep(1100000);
     }
 
     @Test

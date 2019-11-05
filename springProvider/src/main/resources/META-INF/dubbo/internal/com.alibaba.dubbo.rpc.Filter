@@ -1,1 +1,2 @@
 providerFilter=com.huang.yuan.dubbo.component.ProviderFilter
+tps=com.alibaba.dubbo.rpc.filter.TpsLimitFilter

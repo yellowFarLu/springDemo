@@ -9,7 +9,7 @@ import java.util.concurrent.CompletableFuture;
  */
 public interface DemoService {
 
-    CompletableFuture<ModelResult<String>> test(String param);
+    ModelResult<String> test(String param);
 
     String toString();
 

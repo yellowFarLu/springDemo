@@ -37,6 +37,13 @@
             <scope>test</scope>
         </dependency>
 
+        <!-- dubbo -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.7</version>
+        </dependency>
+
     </dependencies>
 
     <build>

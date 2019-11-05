@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <!-- Dubbo应用名称 -->
+    <dubbo:application id="springProviderApplication"
+                       name="springProviderApplication"
+                       owner="huangyuan"
+                       organization="huangyuan"
+                       logger="slf4j"
+                       compiler="javassist"/>
+
+    <!-- 生产端配置  -->
+
+    <!--协议
+        dispatcher : 协议的消息派发方式，用于指定线程模型。取值说明如下
+            all 所有消息都派发到线程池，包括请求，响应，连接事件，断开事件，心跳等。
+            direct 所有消息都不派发到线程池，全部在IO线程上直接执行。
+            message 只有请求响应消息派发到线程池，其它连接断开事件，心跳等消息，直接在IO线程上执行。
+            execution 只请求消息派发到线程池，不含响应，响应和其它连接断开事件，心跳等消息，直接在IO线程上执行。
+            connection 在IO线程上，将连接断开事件放入队列，有序逐个执行，其它消息派发到线程池。
+            ThreadPool
+            fixed 固定大小线程池，启动时建立线程，不关闭，一直持有。(缺省)
+            cached 缓存线程池，空闲一分钟自动删除，需要时重建。
+            limited 可伸缩线程池，但池中的线程数只会增长不会收缩。(为避免收缩时突然来了大流量引起的性能问题)
+
+        threadPool ： 线程池类型
+            fixed 固定大小线程池，启动时建立线程，不关闭，一直持有。(缺省)
+            cached 缓存线程池，空闲一分钟自动删除，需要时重建。
+            limited 可伸缩线程池，但池中的线程数只会增长不会收缩。(为避免收缩时突然来了大流量引起的性能问题)。
+
+        threads : 服务线程池大小
+    -->
+
+    <!--注册中心配置
+        session : 会话中心超时时间
+        register : 是否向此注册中心注册服务，如果设为false，将只订阅，不注册
+        subscribe : 是否向此注册中心订阅服务，如果设为false，将只注册，不订阅
+    -->
+    <dubbo:registry id="springProviderRegistry"
+                    protocol="dubbo"
+                    address="zookeeper://127.0.0.1:2181"
+                    session="60000"
+                    register="true"
+                    subscribe="true"
+                    check="false"
+                    port="2181" client="curator">
+    </dubbo:registry>
+
+    <!--服务
+        failover : 集群方式
+            failover 失败自动切换
+            failfast 快速失败，只发起一次调用，失败立即报错
+            failsafe 失败安全，出现异常时，直接忽略
+            failback 失败自动恢复，后台记录失败请求，定时重发。通常用于消息通知操作
+            forking 并行调用多个服务器，只要一个成功即返回
+
+        serialization : 协议序列化方式
+
+        retries : 远程调用的重试次数
+    -->
+    <dubbo:provider id="springProvider"
+                    application="springProviderApplication"
+                    registry="springProviderRegistry"
+                    port="23801"
+                    cluster="failover"
+                    loadbalance="random"
+                    serialization="hessian2"
+                    retries="2"
+                    timeout="3000"
+                    proxy="javassist"
+                    delay="-1">
+    </dubbo:provider>
+
+    <dubbo:config-center >
+        <dubbo:parameter key="my" value="name"/>
+    </dubbo:config-center>
+
+<!--    <dubbo:consumer filter="providerFilter"/>-->
+
+</beans>

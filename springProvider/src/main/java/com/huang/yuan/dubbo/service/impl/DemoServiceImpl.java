@@ -29,19 +29,11 @@ public class DemoServiceImpl implements DemoService {
     private DemoService2 demoService2;
 
     @Override
-    public CompletableFuture<ModelResult<String>> test(String param) {
+    public ModelResult<String> test(String param) {
 
-        spLogger.warn("执行函数啦，提供者睡一会");
+        spLogger.warn("远程方法被执行了");
 
-        try {
-            Thread.sleep(3000);
-        } catch (Exception e) {
-            spLogger.warn("Exception   ", e);
-        }
-
-        spLogger.warn("提供者休眠一会");
-
-        return CompletableFuture.completedFuture(new ModelResult<>(param));
+        return new ModelResult<>(param);
     }
 
     @Override

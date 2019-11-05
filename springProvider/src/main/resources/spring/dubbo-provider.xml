@@ -9,7 +9,10 @@
             interface="com.huang.yuan.api.service.DemoService"
             ref="demoServiceImpl"
             version="1.0"
-            delay="5000"/>
+            delay="5000"
+            filter="tps">
+        <dubbo:parameter key="tps" value="1"/>
+    </dubbo:service>
 
     <dubbo:service
             interface="com.huang.yuan.api.service.DemoService2"

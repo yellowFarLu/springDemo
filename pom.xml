@@ -11,6 +11,10 @@
         <module>springProviderApi</module>
         <module>springMVC</module>
         <module>springConsumerApi</module>
+        <module>apacheProviderApi</module>
+      <module>apacheProvider</module>
+      <module>apacheConsumerApi</module>
+      <module>apacheConsumer</module>
     </modules>
     <name>springAOP Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -265,13 +269,6 @@
       <version>2.7.3</version>
     </dependency>
     <!-- redis cache related.....end -->
-
-    <!-- dubbo -->
-    <dependency>
-        <groupId>com.alibaba</groupId>
-        <artifactId>dubbo</artifactId>
-        <version>2.6.7</version>
-    </dependency>
 
     <dependency>
       <groupId>com.caucho</groupId>
