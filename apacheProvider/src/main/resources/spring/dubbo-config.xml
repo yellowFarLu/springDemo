@@ -13,7 +13,7 @@
                        owner="huangyuan"
                        organization="huangyuan"
                        logger="slf4j"
-                       compiler="javassist"/>
+                       compiler="javassist" shutwait="300000"/>
 
     <!-- 生产端配置  -->
 

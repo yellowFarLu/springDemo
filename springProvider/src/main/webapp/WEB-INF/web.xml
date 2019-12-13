@@ -10,7 +10,8 @@
     <param-value>classpath*:spring/applicationContext.xml</param-value>
   </context-param>
   <listener>
-    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+<!--    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>-->
+    <listener-class>com.huang.yuan.dubbo.MyContextLoaderListener</listener-class>
   </listener>
 
 </web-app>
