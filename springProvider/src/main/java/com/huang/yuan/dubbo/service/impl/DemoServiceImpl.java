@@ -31,7 +31,15 @@ public class DemoServiceImpl implements DemoService {
     @Override
     public ModelResult<String> test(String param) {
 
-        spLogger.warn("远程方法被执行了");
+        spLogger.warn("远程方法被执行了，进入睡眠");
+
+        try {
+//            Thread.sleep(1000000);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        spLogger.warn("远程方法结束了");
 
         return new ModelResult<>(param);
     }

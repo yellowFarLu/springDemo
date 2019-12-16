@@ -12,6 +12,7 @@
             delay="5000"
             filter="tps">
         <dubbo:parameter key="tps" value="1"/>
+        <dubbo:parameter key="tps.interval" value="1000"/>
     </dubbo:service>
 
     <dubbo:service
