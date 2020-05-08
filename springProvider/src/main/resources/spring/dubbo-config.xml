@@ -81,7 +81,8 @@
                     retries="2"
                     timeout="3000"
                     proxy="javassist"
-                    delay="-1">
+                    delay="-1"
+                    filter="tps">
     </dubbo:provider>
 
 <!--    <dubbo:consumer filter="providerFilter"/>-->

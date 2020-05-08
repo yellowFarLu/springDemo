@@ -10,6 +10,6 @@ import com.alibaba.dubbo.common.extension.SPI;
 @SPI
 public interface AdaptiveExt {
 
-    @Adaptive
+    @Adaptive("test")
     String echo(String msg, URL url);
 }

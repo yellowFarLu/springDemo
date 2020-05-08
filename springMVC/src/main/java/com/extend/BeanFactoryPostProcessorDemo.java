@@ -16,8 +16,8 @@ public class BeanFactoryPostProcessorDemo implements BeanFactoryPostProcessor {
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
 
         // 获取bean定义
-        BeanDefinition beanDefinition =
-                beanFactory.getBeanDefinition("beanId");
+//        BeanDefinition beanDefinition =
+//                beanFactory.getBeanDefinition("beanId");
 
         // 修改BeanDefinition，从而影响之后实例化的bean
         // ..

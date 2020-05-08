@@ -2,6 +2,7 @@ package com.huang.yuan.test;
 
 import com.alibaba.dubbo.remoting.exchange.ResponseFuture;
 import com.alibaba.dubbo.rpc.RpcContext;
+import com.alibaba.dubbo.rpc.service.GenericService;
 import com.huang.yuan.api.model.ModelResult;
 import com.huang.yuan.api.service.DemoService;
 import com.huang.yuan.base.IntegrationTestBase;
@@ -56,4 +57,13 @@ public class TestSpring extends IntegrationTestBase {
 //    public void testSSS() {
 //        testService.test();
 //    }
+
+    @Test
+    public void testGenericCall() {
+        GenericService demoService = (GenericService) applicationContext.getBean("demoService");
+        Object result = demoService.$invoke(
+                "test", new String[] { "java.lang.String" }, new Object[] { "黄远，你好" });
+
+        System.out.println(result);
+    }
 }

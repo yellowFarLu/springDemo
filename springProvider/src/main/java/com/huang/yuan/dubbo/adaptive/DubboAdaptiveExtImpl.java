@@ -6,7 +6,6 @@ import com.alibaba.dubbo.common.extension.Adaptive;
 /**
  * @author huangy on 2019-10-29
  */
-@Adaptive
 public class DubboAdaptiveExtImpl implements AdaptiveExt {
 
     @Override

@@ -5,9 +5,6 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * Created by Dell on 2017/1/20.
- */
 public class TestAspect {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TestAspect.class);
